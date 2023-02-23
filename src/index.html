@@ -4,8 +4,105 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./scss/index.scss" />
+    <link rel="stylesheet" href="../src/scss/index.scss" />
     <title>HELYFLY</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header-wrap">
+        <div class="container">
+          <a class="logo" href="#">
+            <img src="./assets/icons/logoIcon.svg" alt="logo" />
+          </a>
+          <span class="info">Телефон: <span>8(800)-123-12-12</span></span>
+        </div>
+        <div class="header-banner">
+          <h1 class="header-banner__title">
+            Эксклюзивная фотосессия при полете на вертолете
+          </h1>
+          <button class="header-banner__button">Забронировать место</button>
+        </div>
+      </div>
+    </header>
+    <section class="comments">
+      <div class="container">
+        <h3 class="comments__title">Отзывы</h3>
+        <ul class="comments__list">
+          <li class="comments__item">
+            <img class="comments__author_userpic" src="./assets/img/ValeriaAntonova.jpg" alt="#" />
+            <div class="comments__author_name">Валерия Антонова</div>
+            <div class="comments__author-position">Арт-директор</div>
+            <div class="comments__rating rating">
+              <img class='rating__score'src="./assets/icons/ratingIcon.png" alt="#" />
+              <div class="rating__status">
+                Супер! Я бы заказала съемку снова!
+              </div>
+            </div>
+            <p class="comments__content">
+              Хотим выразить огромную благодарность вашей компании! Получили
+              море ощущений, все прошло просто замечательно. Фотки получились
+              великолепные, отдельное спасибо фотографу!
+            </p>
+            <time class="feedback-card__date">27 Апреля, 2019г.</time>
+          </li>
+          <li class="comments__item">
+            <img class="comments__author_userpic" src="./assets/img/ValerijPetrov.png" alt="#" />
+            <div class="comments__author_name">Валерий Петров</div>
+            <div class="comments__author-position">Фотограф</div>
+            <div class="comments__rating rating">
+              <img class='rating__score'src="./assets/icons/ratingIcon.png" alt="#" />
+              <div class="rating__status">
+                Супер! Я бы заказал съемку снова!
+              </div>
+            </div>
+            <p class="comments__content">
+              Восторг! :) Очень понравилось :) Захватили последний теплый,
+              солнечный октябрьский день :) Впечатлило всё: сам вертолет, взлет,
+              полёт, приземление. Организация полёта отличная. Спасибо!
+            </p>
+            <time class="feedback-card__date">19 Апреля, 2019г.</time>
+          </li>
+          <li class="comments__item">
+            <img class="comments__author_userpic" src="./assets/img/JimCarrey.png" alt="#" />
+            <div class="comments__author_name">Джим Керри</div>
+            <div class="comments__author-position">
+            </div>
+            <div class="comments__rating rating">
+              <img class='rating__score'src="./assets/icons/ratingIcon.png" alt="#" />
+              <div class="rating__status">
+                Супер! Я бы заказал съемку снова!
+              </div>
+            </div>
+            <p class="comments__content">
+              Круто-круто-круто!!! Отмечали мой ДэРэ. Отлично провели время!!!
+              Кстати закуски были вкусными и сытными))Мы с собой ничего не
+              брали. Сами много фоткались,поэтому воспоминания обалденные!!!)) А
+              еще нам всем напечатали по сертификату воздухоплавателя, правда
+              некоторые ленятся за ним съездить))) Но все равно приятно. Короче,
+              Презентстар – проверено. Оценка: пять!
+            </p>
+            <time class="feedback-card__date">11 Апреля, 2019г.</time>
+          </li>
+        </div> 
+        <div class="comments__dropdown">
+          <img src="./assets/icons/arrowIcon.svg" alt="arrowIcon" />
+          <button class="comments__dropdown-button">Показать все</button>
+          <img src="./assets/icons/arrowIcon.svg" alt="arrowIcon" />
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-wrap">
+        <div class="footer-info">
+
+        </div>
+        <div class="footer-copyright">
+          <img src="./assets/icons/MCIcon.svg" alt="MCIcon" />
+          <img src="./assets/icons/VISAIcon.svg" alt="VISAIcon" />
+          <span> Тех. поддержка: 8(800)700-00-00</span>
+          <span>© 2018 HELYFLY. All Rights Reserved.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
