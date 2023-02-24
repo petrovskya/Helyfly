@@ -14,7 +14,7 @@
           <a class="logo" href="#">
             <img src="./assets/icons/logoIcon.svg" alt="logo" />
           </a>
-          <span class="info">Телефон: <span>8(800)-123-12-12</span></span>
+          <span >Телефон: <a class="header__contact" href="#">8(800)-123-12-12</a></span>
         </div>
         <div class="header-banner">
           <h1 class="header-banner__title">
@@ -31,10 +31,10 @@
           <li class="comments__item">
             <img class="comments__author_userpic" src="./assets/img/ValeriaAntonova.jpg" alt="#" />
             <div class="comments__author_name">Валерия Антонова</div>
-            <div class="comments__author-position">Арт-директор</div>
-            <div class="comments__rating rating">
-              <img class='rating__score'src="./assets/icons/ratingIcon.png" alt="#" />
-              <div class="rating__status">
+            <div class="comments__author_position">Арт-директор</div>
+            <div class="comments__rate rate">
+              <img class='rate__score'src="./assets/icons/ratingIcon.png" alt="#" />
+              <div class="rate__status">
                 Супер! Я бы заказала съемку снова!
               </div>
             </div>
@@ -43,15 +43,15 @@
               море ощущений, все прошло просто замечательно. Фотки получились
               великолепные, отдельное спасибо фотографу!
             </p>
-            <time class="feedback-card__date">27 Апреля, 2019г.</time>
+            <time class="comments__date">27 Апреля, 2019г.</time>
           </li>
           <li class="comments__item">
             <img class="comments__author_userpic" src="./assets/img/ValerijPetrov.png" alt="#" />
             <div class="comments__author_name">Валерий Петров</div>
-            <div class="comments__author-position">Фотограф</div>
-            <div class="comments__rating rating">
-              <img class='rating__score'src="./assets/icons/ratingIcon.png" alt="#" />
-              <div class="rating__status">
+            <div class="comments__author_position">Фотограф</div>
+            <div class="comments__rate rate">
+              <img class='rate__score'src="./assets/icons/ratingIcon.png" alt="#" />
+              <div class="rate__status">
                 Супер! Я бы заказал съемку снова!
               </div>
             </div>
@@ -60,16 +60,16 @@
               солнечный октябрьский день :) Впечатлило всё: сам вертолет, взлет,
               полёт, приземление. Организация полёта отличная. Спасибо!
             </p>
-            <time class="feedback-card__date">19 Апреля, 2019г.</time>
+            <time class="comments__date">19 Апреля, 2019г.</time>
           </li>
           <li class="comments__item">
             <img class="comments__author_userpic" src="./assets/img/JimCarrey.png" alt="#" />
             <div class="comments__author_name">Джим Керри</div>
-            <div class="comments__author-position">
+            <div class="comments__author_position">
             </div>
-            <div class="comments__rating rating">
-              <img class='rating__score'src="./assets/icons/ratingIcon.png" alt="#" />
-              <div class="rating__status">
+            <div class="comments__rate rate">
+              <img class='rate__score'src="./assets/icons/ratingIcon.png" alt="#" />
+              <div class="rate__status">
                 Супер! Я бы заказал съемку снова!
               </div>
             </div>
@@ -81,7 +81,7 @@
               некоторые ленятся за ним съездить))) Но все равно приятно. Короче,
               Презентстар – проверено. Оценка: пять!
             </p>
-            <time class="feedback-card__date">11 Апреля, 2019г.</time>
+            <time class="comments__date">11 Апреля, 2019г.</time>
           </li>
         </div> 
         <div class="comments__dropdown">
@@ -93,23 +93,33 @@
     </section>
     <footer>
       <div class="footer-wrap">
-        <div class="footer-info">
+        <div class="footer__info">
           <a class="logo" href="#">
             <img src="./assets/icons/logoIcon.svg" alt="logo" />
           </a>
-          <img src="./assets/icons/vkIcon.svg" alt="vkIcon">
-          <img src="./assets/icons/FacebookIcon.svg" alt="FacebookIcon">
-          <img src="./assets/icons/InstragramIcon.svg" alt="InstragramIcon">
-          <div class="lang">
-            <img src="./assets/icons/langIcon.svg" alt="langIcon">
+          <ul class="socials-links">
+            <a class='socials-links__vk' href="#">
+              <img src="./assets/icons/vkIcon.svg" alt="vkIcon"></a>
+            <a class='socials-links__facebook' href="#">
+              <img src="./assets/icons/FacebookIcon.svg" alt="FacebookIcon">
+            </a>
+            <a class='socials-links__instagram' href="#">
+              <img src="./assets/icons/InstragramIcon.svg" alt="InstragramIcon">
+            </a>
+          </ul>
+          <button class="lang-select"> RU
             <img src="./assets/icons/arrowIcon.svg" alt="#">
-          </div>
+          </button>
         </div>
-        <div class="footer-copyright">
-          <img src="./assets/icons/MCIcon.svg" alt="MCIcon" />
-          <img src="./assets/icons/VISAIcon.svg" alt="VISAIcon" />
-          <span> Тех. поддержка: 8(800)700-00-00</span>
-          <span>© 2018 HELYFLY. All Rights Reserved.</span>
+        <div class="footer__copyright">
+          <div class="copyright-icons">
+            <img src="./assets/icons/MCIcon.svg" alt="MCIcon" />
+            <img src="./assets/icons/VISAIcon.svg" alt="VISAIcon" />
+          </div>
+          <div class="copyright-details">
+            <span >Телефон: <a class="footer__contact-support" href="#">8(800)700-00-00</a></span>
+            <span>© 2018 HELYFLY. All Rights Reserved.</span>
+          </div>
         </div>
       </div>
     </footer>
