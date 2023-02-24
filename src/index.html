@@ -9,8 +9,8 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-wrap">
-        <div class="container">
+      <div class="header__wrapper">
+        <div class="header__info">
           <a class="logo" href="#">
             <img src="./assets/icons/logoIcon.svg" alt="logo" />
           </a>
@@ -25,37 +25,74 @@
       </div>
     </header>
     <section class="features">
-      <div class="features__inner">
-        <h2 class="features__title">
-          Фотосессия в вертолете
-        </h2>
-        <p class="features__description">
-          Полет на вертолете это прекрасная возможность получить новые ощущения! А наш замечательный фотограф запечатлит лучшие моменты
-        </p>
-        <ul class="features__list">
-          <li class="features__list-item"> 
-            <img src="./assets/icons/circleIcon.svg" alt="circleIcon"> 3 часа съемки
+      <div class="features__wrapper">
+        <div class="features__content">
+          <h2 class="features__title">
+            Фотосессия в вертолете
+          </h2>
+          <p class="features__description">
+            Полет на вертолете это прекрасная возможность получить новые ощущения! А наш замечательный фотограф запечатлит лучшие моменты
+          </p>
+          <ul class="features__list">
+            <li class="features__list-item"> 
+              <img src="./assets/icons/circleIcon.svg" alt="circleIcon"> 3 часа съемки
+            </li>
+            <li class="features__list-item"> 
+              <img src="./assets/icons/cameraIcon.svg" alt="cameraIcon"> Более 50 фотографий
+            </li>
+            <li class="features__list-item"> 
+              <img src="./assets/icons/mapPinMarkedIcon.svg" alt="mapPinMarkedIcon"> Москва
+            </li>
+            <li class="features__list-item"> 
+              <img src="./assets/icons/speechBubbleIcon.svg" alt="speechBubbleIcon"> Готовы ответить на любые вопросы
+            </li>
+          </ul>
+          <p class="features__rate">
+            <img src="./assets/icons/CupIcon.svg" alt="CupIcon">
+            Более 50 отзывов с оценкой 
+            <img class='rate__score'src="./assets/icons/ratingIcon.png" alt="#" />
+          </p>
+        </div>
+        <div class="features__preview">
+          <img src="./assets/img/featuresPreview.png" alt="featuresPreview">
+        </div>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="gallery__wrapper">
+        <h3 class="gallery__title">Фотографии пакета:</h3>
+        <ul class="gallery__list">
+          <li class="gallery__list-item">
+            <img src="./assets/img/galleryPic1.png" alt="galleryPic">
           </li>
-          <li class="features__list-item"> 
-            <img src="./assets/icons/cameraIcon.svg" alt="cameraIcon"> Более 50 фотографий
+          <li class="gallery__list-item">
+            <img src="./assets/img/galleryPic2.png" alt="galleryPic">
           </li>
-          <li class="features__list-item"> 
-            <img src="./assets/icons/mapPinMarkedIcon.svg" alt="mapPinMarkedIcon"> Москва
+          <li class="gallery__list-item">
+            <img src="./assets/img/galleryPic3.png" alt="galleryPic">
           </li>
-          <li class="features__list-item"> 
-            <img src="./assets/icons/speechBubbleIcon.svg" alt="speechBubbleIcon"> Готовы ответить на любые вопросы
+          <li class="gallery__list-item">
+            <img src="./assets/img/galleryPic4.png" alt="galleryPic">
+          </li>
+          <li class="gallery__list-item">
+            <img src="./assets/img/galleryPic3.png" alt="galleryPic">
+          </li>
+          <li class="gallery__list-item">
+            <img src="./assets/img/galleryPic4.png" alt="galleryPic">
+          </li>
+          <li class="gallery__list-item">
+            <img src="./assets/img/galleryPic2.png" alt="galleryPic">
+          </li>
+          <li class="gallery__list-item">
+            <img src="./assets/img/galleryPic3.png" alt="galleryPic">
           </li>
         </ul>
-        <p class="features__rate">
-          <img src="./assets/icons/CupIcon.svg" alt="CupIcon">
-          Более 50 отзывов с оценкой 
-          <img class='rate__score'src="./assets/icons/ratingIcon.png" alt="#" />
-        </p>
+        <a class="gallery__dropdown">
+          <img src="./assets/icons/arrowIcon.svg" alt="arrowIcon" />
+          Показать все фото
+          <img src="./assets/icons/arrowIcon.svg" alt="arrowIcon" />
+        </a>
       </div>
-      <div class="features__preview">
-        <img src="./assets/img/featuresPreview.png" alt="featuresPreview">
-      </div>
-      
     </section>
     <section class="comments">
       <div class="container">
