@@ -24,7 +24,7 @@ ul {
   list-style-type: none;
 }
 
-.header__info {
+.header__wrapper {
   display: flex;
   align-items: center;
   padding: 39px 0 38px;
@@ -43,6 +43,7 @@ ul {
   background-image: url("../assets/img/headerBannerBg.png");
 }
 .header-banner__title {
+  width: 75%;
   font-size: 40px;
   font-weight: 700;
   line-height: 49px;
