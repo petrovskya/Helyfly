@@ -264,6 +264,60 @@ ul {
   width: 31px;
 }
 
+.footer {
+  padding-top: 50px;
+}
+.footer__info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 66px 41px 66px;
+}
+.footer__info_socials {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.footer__info_socials-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.footer__info_socials-link {
+  width: 25.5px;
+  height: 25.5px;
+}
+.footer__lang-select {
+  font-size: 15px;
+  font-weight: 400;
+  color: #37373f;
+}
+.footer__wrapper {
+  background-color: #faf9f8;
+}
+.footer__other {
+  display: flex;
+  flex-direction: row;
+  padding: 3px 66px 31px 66px;
+  gap: 276px;
+}
+.footer__payment-icons {
+  display: flex;
+  gap: 20px;
+}
+.footer__copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 7px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #b3b3b3;
+  text-align: center;
+}
+.footer__contact-support {
+  color: #b3b3b3;
+}
+
 .logo {
   height: 23px;
 }
