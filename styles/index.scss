@@ -2,13 +2,14 @@
 @import '../styles/reset';
 @import '../styles/header';
 @import '../styles/features';
+@import '../styles/gallery';
 
 .logo {
   height: 23px;
 }
 
 .container {
-  width: 1170px;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
 }
