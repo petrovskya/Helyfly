@@ -43,7 +43,6 @@ ul {
   background-image: url("../assets/img/headerBannerBg.png");
 }
 .header-banner__title {
-  width: 75%;
   font-size: 40px;
   font-weight: 700;
   line-height: 49px;
@@ -61,7 +60,63 @@ ul {
 
 .color-text {
   background: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #fc9b09;
+}
+
+.features {
+  padding: 70px 0 30px;
+}
+.features__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.features__title {
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-weight: 500;
+  color: #37373f;
+}
+.features__description {
+  margin-bottom: 12px;
+  width: 480px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #37373f;
+}
+.features__list {
+  display: grid;
+  align-items: center;
+  gap: 17px;
+  margin-bottom: 39px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #37373f;
+}
+.features__list-item {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 6% 94%;
+  gap: 10px;
+}
+.features .rate {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 8fr 1fr;
+  gap: 10px;
+  padding: 20px 129px 25px 0;
+  width: 569px;
+  border-top: 1px solid #c7c7c7;
+  border-bottom: 1px solid #c7c7c7;
+  font-size: 18px;
+  font-weight: 400;
+  color: #37373f;
+}
+.features .rate__score {
+  width: 118px;
+  height: 17px;
 }
 
 .logo {

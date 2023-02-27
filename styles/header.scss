@@ -18,7 +18,6 @@
     background-image: url('../assets/img/headerBannerBg.png');
 
     &__title {
-      width: 75%;
       font-size: 40px;
       font-weight: 700;
       line-height: 49px;
@@ -37,5 +36,7 @@
 }
 .color-text {
   background: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #fc9b09;
 }
