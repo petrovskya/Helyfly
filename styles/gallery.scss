@@ -11,10 +11,24 @@
   }
 
   &__slider {
-    &-item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    &-item-img {
+      display: block;
+      max-width: 100%;
+      border-radius: 4px;
     }
   }
   &__dropdown {
+    display: flex;
+    justify-content: center;
     margin-bottom: 27px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #5286ec;
   }
+}
+.dropdown-icon {
+  margin: 0 10px;
 }
