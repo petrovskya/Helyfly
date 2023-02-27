@@ -136,7 +136,6 @@ ul {
 .gallery__wrapper {
   display: grid;
   gap: 37px;
-  border-bottom: 0.5px solid #c7c7c7;
 }
 .gallery__title {
   font-size: 20px;
@@ -146,12 +145,24 @@ ul {
 .gallery__slider {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 13px;
+}
+.gallery__slider-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  max-width: 276px;
+  height: 186px;
+  border-radius: 4px;
 }
 .gallery__slider-item-img {
-  display: block;
-  max-width: 100%;
-  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .gallery__dropdown {
   display: flex;
@@ -162,8 +173,95 @@ ul {
   color: #5286ec;
 }
 
-.dropdown-icon {
-  margin: 0 10px;
+.about {
+  padding: 37px 0 51px;
+  border-top: 0.5px solid #c7c7c7;
+  border-bottom: 0.5px solid #c7c7c7;
+}
+.about__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -15px;
+}
+.about__info {
+  display: grid;
+  gap: 40px;
+  margin: 0 15px;
+  max-width: 50%;
+}
+.about__article {
+  max-width: 100%;
+}
+.about__article_subtitle {
+  margin-bottom: 14px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #37373f;
+}
+.about__article_text {
+  margin-bottom: 6px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24.18px;
+  color: #37373f;
+}
+.about__article_show-more {
+  font-size: 16px;
+  font-weight: 500;
+  color: #5286ec;
+}
+.about__profile {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 31px;
+  padding-right: 113px;
+  max-width: 50%;
+  margin: 0 15px;
+}
+.about__profile .profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 190px;
+}
+.about__profile .profile-photo {
+  display: block;
+  margin-bottom: 23px;
+  position: relative;
+  overflow: hidden;
+  width: 139px;
+  height: 139px;
+  border-radius: 50%;
+}
+.about__profile .profile-photo-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about__profile .profile-name {
+  margin-bottom: 7px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #37373f;
+}
+.about__profile .profile-position {
+  margin-bottom: 11px;
+}
+.about__profile .profile-more {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #5286ec;
+}
+
+.heart-icon {
+  margin: -15px 0 0 20px;
+  width: 31px;
 }
 
 .logo {
@@ -174,6 +272,10 @@ ul {
   max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.arrow-icon {
+  margin: 0 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

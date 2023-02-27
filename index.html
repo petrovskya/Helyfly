@@ -8,8 +8,8 @@
     <title>HELYFLY</title>
   </head>
   <body>
-    <div class="container">
-      <header class="header">
+    <header class="header">
+      <div class="container">
         <div class="header__wrapper">
           <a class="logo" href="#">
             <img src="./assets/icons/logoIcon.svg" alt="logo" />
@@ -17,7 +17,9 @@
           <span class="header__contact">Телефон: <a class="header__contact-phone"href="#">8(800)-123-12-12</a>
           </span>  
         </div>
-        <div class="header-banner">
+      </div>
+      <div class="header-banner">
+        <div class="container">
           <h1 class="header-banner__title">
             Эксклюзивная <mark class="color-text">фотосессия</mark> при полете <br> на вертолете
           </h1>
@@ -25,7 +27,9 @@
             Забронировать место
           </button>
         </div>
-      </header>
+      </div>
+    </header>
+    <div class="main container">
       <section class="features">
         <div class="features__wrapper">
           <div class="features__content">
@@ -90,47 +94,50 @@
             </li>
           </ul>
           <a href="#" class="gallery__dropdown">
-            <img class="dropdown-icon" src="./assets/icons/arrowIcon.svg" alt="arrowIcon" />
+            <img class="arrow-icon" src="./assets/icons/arrowIcon.svg" alt="arrowIcon" />
               Показать все фото 
-            <img class="dropdown-icon" src="./assets/icons/arrowIcon.svg" alt="arrowIcon" />
+            <img class="arrow-icon" src="./assets/icons/arrowIcon.svg" alt="arrowIcon" />
           </a> 
         </div>
       </section>
       <section class="about">
         <div class="about__wrapper">
-          <div class="about__content">
-            <article class="about__info personal">
-              <h4 class="article__subtitle">Об организаторе:</h4>
-              <p class="article__text">
+          <div class="about__info">
+            <article class="about__article personal">
+              <h4 class="about__article_subtitle">Об организаторе:</h4>
+              <p class="about__article_text">
                 Всем привет! Я фотограф Мария! И по мимо фотосъемки я так же являюсь членом группы экспертов туристической отрасли, которые хорошо разбираются в маркетинге, операциях и услугах обслуживания клиентов, специализирующихся на совместном использовании и частных турах. 
-                
-                Сначала мы (я и моя команда) изучаем интересы клиентов, а затем придумываем подходящее решение, которое соответствует бюджету и планам клиента. Мы никогда не зависим от субпоставщиков и не свяжемся<span>...</span><span class="more"></span>
+                <br>
+                <br>
+                Сначала мы (я и моя команда) изучаем интересы клиентов, а затем придумываем подходящее решение, которое соответствует бюджету и планам клиента. Мы никогда не зависим от субпоставщиков и не свяжемся...
               </p>
-              <button class="article__show-more">Читать еще
-                <img src="./assets/icons/arrowIcon.svg" alt="arrowIcon" />
-              </button>
+              <a href="#" class="about__article_show-more">Читать еще
+                <img class="arrow-icon" src="./assets/icons/arrowIcon.svg" alt="arrowIcon" />
+              </a>
             </article>
-            <article class="about__info service">
-              <h4 class="article__subtitle">Об организаторе:</h4>
-              <p class="article__text">
-                Всем привет! Я фотограф Мария! И по мимо фотосъемки я так же являюсь членом группы экспертов туристической отрасли, которые хорошо разбираются в маркетинге, операциях и услугах обслуживания клиентов, специализирующихся на совместном использовании и частных турах. 
-                
-                Сначала мы (я и моя команда) изучаем интересы клиентов, а затем придумываем подходящее решение, которое соответствует бюджету и планам клиента. Мы никогда не зависим от субпоставщиков и не свяжемся<span>...</span><span class="more"></span>
+            <article class="about__article service">
+              <h4 class="about__article_subtitle">Что я представлю:</h4>
+              <p class="about__article_text">
+                Встречу вас на машине после длительного перелёта. <br>Качественный подбор места и локации для вашей съемки. <br>При необходимости всегда возможно прерваться на обед/ужин.<br>Более 50 фотографий на выходе с обработкой и замечательные впечатления о Дубае !
               </p>
-              <button class="article__show-more">Читать еще
-                <img src="./assets/icons/arrowIcon.svg" alt="arrowIcon" />
-              </button>
+              <a href="#" class="about__article_show-more">Читать еще
+                <img class="arrow-icon" src="./assets/icons/arrowIcon.svg" alt="arrowIcon" />
+              </a>
             </article>
           </div>
-          <div class="about__organizer-profile">
-            <div class="profile-photo">
-              <img src="./assets/img/avatar.png" alt="avatar">
-            </div>
-            <div class="profile-card">
+          <div class="about__profile">
+            <div class="profile">
+              <div class="profile-photo">
+                <img class="profile-photo-img" src="./assets/img/avatar.png" alt="avatar">
+              </div>
               <p class="profile-name">Марина Иванова</p>
               <p class="profile-position">Фотограф</p>
-              <a сlass="profile-more" href="#">Показать больше информации о фотографе</a>
+              
+              <a href="#" сlass="profile-more" >Показать больше информации о фотографе</a>
+             
             </div>
+            <img class="heart-icon" src="./assets/icons/heartIcon.svg" alt="heartIcon">
+            
           </div>
         </div>
       </section>
@@ -190,7 +197,10 @@
             <div class="profile-card">
               <p class="profile-name">Марина Иванова</p>
               <p class="profile-position">Фотограф</p>
-              <a сlass="profile-more" href="#">Показать больше информации</a>
+              <div class="profile-more">
+                <a href="#">Показать больше информации</a>
+              </div>
+              
             </div>
           </div>
         </aside>
