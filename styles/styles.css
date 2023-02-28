@@ -38,6 +38,10 @@ ul {
 }
 .header__contact-phone {
   color: #37373f;
+  transition: 0.3s;
+}
+.header__contact-phone:hover {
+  color: #5286ec;
 }
 .header-banner {
   padding: 286px 0 260px;
@@ -167,6 +171,7 @@ ul {
   max-width: 276px;
   height: 186px;
   border-radius: 4px;
+  transition: 0.3s;
 }
 .gallery__slider-item-img {
   position: absolute;
@@ -176,6 +181,10 @@ ul {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.gallery__slider-item:hover {
+  transform: scale(1.1);
+  z-index: 2;
 }
 .gallery__dropdown {
   display: flex;
@@ -239,24 +248,24 @@ ul {
 
 .booking {
   padding: 50px 0 82px;
+  color: #37373f;
 }
 .booking__title {
   margin-bottom: 30px;
   font-size: 20px;
   font-weight: 500;
   line-height: 29.26px;
-  color: #37373f;
 }
 .booking__form {
   padding: 0 30px;
   max-width: 770px;
   border: 1px solid #c7c7c7;
-  color: #37373f;
 }
 .booking__date {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  gap: 10px;
   padding: 20px 0;
   font-size: 18px;
   font-weight: 500;
@@ -288,12 +297,18 @@ ul {
   font-weight: 500;
   line-height: 17px;
   color: #fc9b09;
+  transition: 0.3s;
+}
+.booking__option_button:hover {
+  background-color: #fc9b09;
+  color: #ffffff;
 }
 
 .location {
   background: url("../assets/backgrounds/locationBg.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   color: #37373f;
   padding: 20px 0;
 }
@@ -519,26 +534,24 @@ ul {
   margin: 0 10px;
 }
 
-.rate_features {
+.rate {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 20px 120px 25px 0;
-  width: 569px;
-  border-bottom: 0.5px solid #c7c7c7;
   font-size: 18px;
   font-weight: 400;
   color: #37373f;
+  gap: 10px;
+}
+.rate_features {
+  padding: 20px 110px 25px 0;
+  max-width: 569px;
+  border-bottom: 0.5px solid #c7c7c7;
 }
 .rate_booking {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   padding: 22px 0 50px 0;
-  width: 440px;
-  font-size: 18px;
-  font-weight: 400;
-  color: #37373f;
+  gap: 10px;
+  max-width: 440px;
 }
 .rate__text {
   text-align: center;

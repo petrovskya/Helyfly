@@ -1,24 +1,23 @@
 .booking {
   padding: 50px 0 82px;
-  &__wrapper {
-  }
+  color: #37373f;
   &__title {
     margin-bottom: 30px;
     font-size: 20px;
     font-weight: 500;
     line-height: 29.26px;
-    color: #37373f;
   }
   &__form {
     padding: 0 30px;
     max-width: 770px;
     border: 1px solid #c7c7c7;
-    color: #37373f;
+    // color: #37373f;
   }
   &__date {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    gap: 10px;
     padding: 20px 0;
     font-size: 18px;
     font-weight: 500;
@@ -53,6 +52,11 @@
       font-weight: 500;
       line-height: 17px;
       color: #fc9b09;
+      transition: 0.3s;
+      &:hover {
+        background-color: #fc9b09;
+        color: #ffffff;
+      }
     }
   }
 }

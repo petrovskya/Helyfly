@@ -21,26 +21,22 @@
   margin: 0 10px;
 }
 .rate {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: #37373f;
+  gap: 10px;
   &_features {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 20px 120px 25px 0;
-    width: 569px;
+    padding: 20px 110px 25px 0;
+    max-width: 569px;
     border-bottom: 0.5px solid #c7c7c7;
-    font-size: 18px;
-    font-weight: 400;
-    color: #37373f;
   }
   &_booking {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     padding: 22px 0 50px 0;
-    width: 440px;
-    font-size: 18px;
-    font-weight: 400;
-    color: #37373f;
+    gap: 10px;
+    max-width: 440px;
   }
   &__text {
     text-align: center;
@@ -51,12 +47,8 @@
   }
 }
 
-@mixin profile {
-}
-
 .profile {
   display: flex;
-
   align-items: center;
   &_location {
     justify-content: flex-start;

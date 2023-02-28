@@ -11,6 +11,10 @@
     color: #b3b3b3;
     &-phone {
       color: #37373f;
+      transition: 0.3s;
+      &:hover {
+        color: #5286ec;
+      }
     }
   }
   &-banner {
