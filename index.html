@@ -53,7 +53,7 @@
                 <img src="./assets/icons/speechBubbleIcon.svg" alt="speechBubbleIcon"> Готовы ответить на любые вопросы
               </li>
             </ul>
-            <div class="rate">
+            <div class="rate_features">
               <img src="./assets/icons/CupIcon.svg" alt="CupIcon">
               <p class="rate__text">
               
@@ -130,16 +130,14 @@
               </a>
             </article>
           </div>
-          <div class="about__profile">
-            <div class="profile">
-              <div class="profile-photo">
+          <div class="about__card">
+            <div class="profile profile_about">
+              <div class="profile-photo profile-photo_about">
                 <img class="profile-photo-img" src="./assets/img/avatar.png" alt="avatar">
               </div>
               <p class="profile-name">Марина Иванова</p>
               <p class="profile-position">Фотограф</p>
-              
-              <a href="#" сlass="profile-more" >Показать больше информации о фотографе</a>
-             
+              <a class="profile-more profile-more_about" href="#">Показать больше информации о фотографе</a>
             </div>
             <img class="heart-icon" src="./assets/icons/heartIcon.svg" alt="heartIcon">
             
@@ -171,7 +169,7 @@
                 <button class="booking__option_button">Выбрать</button>
               </li>
             </ul>
-            <div class="rate">
+            <div class="rate_booking">
               <img src="./assets/icons/CupIcon.svg" alt="CupIcon">
               <p class="rate__text">
               
@@ -184,38 +182,44 @@
         </div>
       </section>
     </div>
-    <div class="container">
-      <section class="location">
+    <section class="location">
+      <div class="container">
         <aside class="location__info">
           <ol class="location__slider">
             <li class="location__slider-item">
-              <span class="slider-item_title">Где встречаемся?</span>
-              <span class="slider-item_subtitle">Москва</span>
+              <div class="location__slider-item_text">
+                <span class="location__slider-item_title">Где встречаемся?</span>
+                <span class="location__slider-item_subtitle">Москва</span>
+              </div>
             </li>
             <li class="location__slider-item">
-              <span class="slider-item_title">Время съемки</span>
-              <span class="slider-item_subtitle">Москва</span>
+              <div class="location__slider-item_text">
+                <span class="location__slider-item_title">Время съемки</span>
+                <span class="location__slider-item_subtitle">Москва</span>
+              </div>
             </li>
             <li class="location__slider-item">
-              <span class="slider-item_title">Мест осталось:</span>
-              <span class="slider-item_subtitle">2 места</span>
+              <div class="location__slider-item_text">
+                <span class="location__slider-item_title">Мест осталось:</span>
+                <span class="location__slider-item_subtitle">2 места</span>
+              </div>
             </li>
           </ol>
-          <div class="location__organizer-profile">
-            <div class="profile-photo">
-              <img src="./assets/img/avatar.png" alt="avatar">
+          <div class="profile profile_location">
+            <div class="profile-photo profile-photo_location">
+              <img class="profile-photo-img" src="./assets/img/avatar.png" alt="avatar">
             </div>
-            <div class="profile-card">
-              <p class="profile-name">Марина Иванова</p>
-              <p class="profile-position">Фотограф</p>
-              <div class="profile-more">
-                <a href="#">Показать больше информации</a>
-              </div>
-              
+            <div class="profile-card_location">
+              <p class="profile-name profile-name_location">Марина Иванова</p>
+              <p class="profile-position profile-position_location ">Фотограф</p>
+              <a class="profile-more profile-more_location" href="#">Показать больше информации</a>
+
             </div>
           </div>
         </aside>
-      </section>
+      </div>
+    </section>
+    <div class="container">
       <section class="comments">
         <div class="comments__wrapper">
           <h3 class="comments__title">Отзывы</h3>

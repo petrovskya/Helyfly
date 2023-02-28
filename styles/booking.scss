@@ -17,9 +17,9 @@
   }
   &__date {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    gap: 14px;
-    padding: 30px 0 20px 0;
+    padding: 20px 0;
     font-size: 18px;
     font-weight: 500;
   }
@@ -42,7 +42,6 @@
     }
     &_price {
       font-weight: 600;
-      line-height: 22px;
     }
     &_other {
     }
@@ -56,9 +55,4 @@
       color: #fc9b09;
     }
   }
-}
-
-.rate {
-}
-.rate__score {
 }

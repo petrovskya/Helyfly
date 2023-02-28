@@ -34,53 +34,13 @@
       color: #5286ec;
     }
   }
-  &__profile {
+  &__card {
     display: flex;
     align-items: flex-start;
     padding-top: 31px;
     padding-right: 113px;
     max-width: 50%;
     margin: 0 15px;
-    .profile {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 190px;
-      &-photo {
-        display: block;
-        margin-bottom: 23px;
-        position: relative;
-        overflow: hidden;
-        width: 139px;
-        height: 139px;
-        border-radius: 50%;
-        &-img {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-      }
-      &-name {
-        margin-bottom: 7px;
-        font-size: 18px;
-        font-weight: 500;
-        color: #37373f;
-      }
-      &-position {
-        margin-bottom: 11px;
-      }
-      &-more {
-        text-align: center;
-        font-size: 14px;
-        font-weight: 500;
-        color: #5286ec;
-      }
-    }
   }
 }
 
