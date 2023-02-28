@@ -319,6 +319,114 @@ ul {
   color: #fc9b09;
 }
 
+.comments__wrapper {
+  display: grid;
+  place-self: start;
+  max-width: 630px;
+  color: #37373f;
+}
+.comments__title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.comments__list {
+  margin-bottom: 47px;
+}
+.comments__item {
+  display: flex;
+  gap: 20px;
+  padding: 30px 0 0 0;
+}
+.comments__user-content {
+  display: grid;
+  max-width: 80%;
+  border-bottom: 0.5px solid #c7c7c7;
+}
+.comments__userpic {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 101px;
+  height: 101px;
+  border-radius: 50%;
+}
+.comments__userpic_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.comments__username {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.comments__user-position {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.comments__rate {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+.comments__rate_score {
+  width: 118px;
+  height: 17px;
+}
+.comments__rate_status {
+  font-size: 14px;
+  font-weight: 400;
+  color: #b3b3b3;
+  position: relative;
+}
+.comments__rate_status::before {
+  content: url("../assets/icons/CheckIcon.svg");
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: -20px;
+}
+.comments__text {
+  margin-bottom: 22px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+.comments__date {
+  margin-bottom: 35px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #b3b3b3;
+}
+.comments__dropdown-button {
+  display: block;
+  margin: auto;
+  position: relative;
+  font-size: 17px;
+  font-weight: 500;
+  color: #5286ec;
+}
+.comments__dropdown-button::before {
+  content: url("../assets/icons/arrowIcon.svg");
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: -22px;
+}
+.comments__dropdown-button::after {
+  content: url("../assets/icons/arrowIcon.svg");
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 175px;
+}
+
 .footer {
   padding-top: 50px;
 }
@@ -352,12 +460,15 @@ ul {
 .footer__other {
   display: flex;
   flex-direction: row;
+  align-items: center;
   padding: 3px 66px 31px 66px;
   gap: 276px;
 }
 .footer__payment-icons {
   display: flex;
   gap: 20px;
+  width: 39px;
+  height: 25px;
 }
 .footer__copyright {
   display: flex;
