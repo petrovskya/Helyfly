@@ -15,7 +15,7 @@
   }
   &-banner {
     padding: 286px 0 260px;
-    background-image: url('../assets/img/headerBannerBg.png');
+    background-image: url('../assets/backgrounds/headerBannerBg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -27,6 +27,7 @@
       color: #ffffff;
     }
     &__button {
+      position: relative;
       margin-top: 129px;
       padding: 20px 38px 20px;
       border: 3px solid #ffffff;
@@ -34,6 +35,33 @@
       color: #ffffff;
       font-size: 18px;
       font-weight: 900;
+    }
+    &__button:hover:before {
+      content: ' ';
+      display: block;
+      position: absolute;
+      top: -110px;
+      left: -5px;
+      width: 224px;
+      height: 96px;
+      font-size: 35px;
+      font-family: inherit;
+
+      background-image: url('../assets/icons/priceBadge.png');
+      background-repeat: no-repeat;
+      border-radius: 5px;
+    }
+    &__button:hover::after {
+      content: '1500₽';
+      display: block;
+      position: absolute;
+      top: -76px;
+      left: -33px;
+      width: 224px;
+      height: 96px;
+      font-size: 35px;
+      font-weight: 800;
+      font-family: 'Montserrat';
     }
   }
 }
