@@ -36,42 +36,38 @@
       padding: 20px 38px 20px;
       border: 3px solid #ffffff;
       border-radius: 3px;
-      color: #ffffff;
       font-size: 18px;
       font-weight: 900;
+      color: #ffffff;
       transition: 0.5s;
     }
     &__button:hover:before {
       content: ' ';
-      display: block;
       position: absolute;
+      display: block;
       top: -110px;
       left: -5px;
       width: 224px;
       height: 96px;
+      border-radius: 5px;
       font-size: 35px;
-      font-family: inherit;
-
       background-image: url('../assets/icons/priceBadge.png');
       background-repeat: no-repeat;
-      border-radius: 5px;
     }
     &__button:hover::after {
       content: '1500₽';
-      display: block;
       position: absolute;
+      display: block;
       top: -76px;
       left: -33px;
       width: 224px;
       height: 96px;
       font-size: 35px;
       font-weight: 800;
-      font-family: 'Montserrat';
     }
   }
 }
 .color-text {
-  background: transparent;
-
   color: #fc9b09;
+  background: transparent;
 }

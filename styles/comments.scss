@@ -22,12 +22,11 @@
   &__user-content {
     display: grid;
     max-width: 80%;
-
     border-bottom: 0.5px solid #c7c7c7;
   }
   &__userpic {
-    display: block;
     position: relative;
+    display: block;
     overflow: hidden;
     width: 101px;
     height: 101px;
@@ -36,9 +35,9 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
       width: 100%;
       height: 100%;
+      transform: translate(-50%, -50%);
       object-fit: cover;
     }
   }
@@ -61,17 +60,17 @@
       height: 17px;
     }
     &_status {
+      position: relative;
       font-size: 14px;
       font-weight: 400;
       color: #b3b3b3;
-      position: relative;
-    }
-    &_status::before {
-      content: url('../assets/icons/CheckIcon.svg');
-      display: block;
-      position: absolute;
-      top: 2px;
-      left: -20px;
+      &::before {
+        content: url('../assets/icons/CheckIcon.svg');
+        display: block;
+        position: absolute;
+        top: 2px;
+        left: -20px;
+      }
     }
   }
   &__text {
@@ -94,19 +93,15 @@
     font-size: 17px;
     font-weight: 500;
     color: #5286ec;
-  }
-  &__dropdown-button::before {
-    content: url('../assets/icons/arrowIcon.svg');
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: -22px;
-  }
-  &__dropdown-button::after {
-    content: url('../assets/icons/arrowIcon.svg');
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 175px;
+    &::before {
+      @include arrow-icon;
+      top: 0px;
+      left: -22px;
+    }
+    &::after {
+      @include arrow-icon;
+      top: 0px;
+      left: 175px;
+    }
   }
 }

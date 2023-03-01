@@ -1,5 +1,6 @@
 @import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap';
 @import '../styles/reset';
+@import '../styles/mixins';
 @import '../styles/header';
 @import '../styles/features';
 @import '../styles/gallery';
@@ -17,26 +18,25 @@
   margin: 0 auto;
   padding: 0 15px;
 }
-.arrow-icon {
-  margin: 0 10px;
-}
+
 .rate {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  gap: 10px;
   font-size: 18px;
   font-weight: 400;
   color: #37373f;
-  gap: 10px;
+
   &_features {
-    padding: 20px 110px 25px 0;
     max-width: 569px;
+    padding: 20px 110px 25px 0;
     border-bottom: 0.5px solid #c7c7c7;
   }
   &_booking {
+    max-width: 440px;
     padding: 22px 0 50px 0;
     gap: 10px;
-    max-width: 440px;
   }
   &__text {
     text-align: center;
@@ -51,29 +51,29 @@
   display: flex;
   align-items: center;
   &_location {
+    width: 100%;
     justify-content: flex-start;
     flex-direction: row;
-    width: 100%;
     gap: 10px;
   }
   &_about {
+    width: 190px;
     justify-content: center;
     flex-direction: column;
-    width: 190px;
   }
   &-photo {
-    display: block;
     position: relative;
+    display: block;
     overflow: hidden;
     border-radius: 50%;
     &-img {
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transform: translate(-50%, -50%);
     }
   }
   &-photo_location {
@@ -81,9 +81,9 @@
     height: 67px;
   }
   &-photo_about {
-    margin-bottom: 23px;
     width: 139px;
     height: 139px;
+    margin-bottom: 23px;
   }
 
   &-card_location {

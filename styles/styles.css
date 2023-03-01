@@ -62,41 +62,39 @@ ul {
   padding: 20px 38px 20px;
   border: 3px solid #ffffff;
   border-radius: 3px;
-  color: #ffffff;
   font-size: 18px;
   font-weight: 900;
+  color: #ffffff;
   transition: 0.5s;
 }
 .header-banner__button:hover:before {
   content: " ";
-  display: block;
   position: absolute;
+  display: block;
   top: -110px;
   left: -5px;
   width: 224px;
   height: 96px;
+  border-radius: 5px;
   font-size: 35px;
-  font-family: inherit;
   background-image: url("../assets/icons/priceBadge.png");
   background-repeat: no-repeat;
-  border-radius: 5px;
 }
 .header-banner__button:hover::after {
   content: "1500₽";
-  display: block;
   position: absolute;
+  display: block;
   top: -76px;
   left: -33px;
   width: 224px;
   height: 96px;
   font-size: 35px;
   font-weight: 800;
-  font-family: "Montserrat";
 }
 
 .color-text {
-  background: transparent;
   color: #fc9b09;
+  background: transparent;
 }
 
 .features {
@@ -165,8 +163,8 @@ ul {
   gap: 13px;
 }
 .gallery__slider-item {
-  display: block;
   position: relative;
+  display: block;
   overflow: hidden;
   max-width: 276px;
   height: 186px;
@@ -177,14 +175,14 @@ ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
+  transform: translate(-50%, -50%);
   object-fit: cover;
 }
 .gallery__slider-item:hover {
-  transform: scale(1.1);
   z-index: 2;
+  transform: scale(1.1);
 }
 .gallery__dropdown {
   display: flex;
@@ -208,24 +206,23 @@ ul {
 .about__info {
   display: grid;
   gap: 40px;
-  margin: 0 15px;
   max-width: 50%;
+  margin: 0 15px;
 }
 .about__article {
   max-width: 100%;
+  color: #37373f;
 }
 .about__article_subtitle {
   margin-bottom: 14px;
   font-size: 18px;
   font-weight: 500;
-  color: #37373f;
 }
 .about__article_text {
   margin-bottom: 6px;
   font-size: 16px;
   font-weight: 400;
   line-height: 24.18px;
-  color: #37373f;
 }
 .about__article_show-more {
   font-size: 16px;
@@ -235,15 +232,15 @@ ul {
 .about__card {
   display: flex;
   align-items: flex-start;
-  padding-top: 31px;
-  padding-right: 113px;
   max-width: 50%;
   margin: 0 15px;
+  padding-top: 31px;
+  padding-right: 113px;
 }
 
 .heart-icon {
-  margin: -15px 0 0 20px;
   width: 31px;
+  margin: -15px 0 0 20px;
 }
 
 .booking {
@@ -382,8 +379,8 @@ ul {
   border-bottom: 0.5px solid #c7c7c7;
 }
 .comments__userpic {
-  display: block;
   position: relative;
+  display: block;
   overflow: hidden;
   width: 101px;
   height: 101px;
@@ -393,9 +390,9 @@ ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
+  transform: translate(-50%, -50%);
   object-fit: cover;
 }
 .comments__username {
@@ -418,10 +415,10 @@ ul {
   height: 17px;
 }
 .comments__rate_status {
+  position: relative;
   font-size: 14px;
   font-weight: 400;
   color: #b3b3b3;
-  position: relative;
 }
 .comments__rate_status::before {
   content: url("../assets/icons/CheckIcon.svg");
@@ -466,6 +463,9 @@ ul {
   left: 175px;
 }
 
+.footer {
+  padding: 1px 0;
+}
 .footer__info {
   display: flex;
   justify-content: space-between;
@@ -530,28 +530,24 @@ ul {
   padding: 0 15px;
 }
 
-.arrow-icon {
-  margin: 0 10px;
-}
-
 .rate {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  gap: 10px;
   font-size: 18px;
   font-weight: 400;
   color: #37373f;
-  gap: 10px;
 }
 .rate_features {
-  padding: 20px 110px 25px 0;
   max-width: 569px;
+  padding: 20px 110px 25px 0;
   border-bottom: 0.5px solid #c7c7c7;
 }
 .rate_booking {
+  max-width: 440px;
   padding: 22px 0 50px 0;
   gap: 10px;
-  max-width: 440px;
 }
 .rate__text {
   text-align: center;
@@ -566,19 +562,19 @@ ul {
   align-items: center;
 }
 .profile_location {
+  width: 100%;
   justify-content: flex-start;
   flex-direction: row;
-  width: 100%;
   gap: 10px;
 }
 .profile_about {
+  width: 190px;
   justify-content: center;
   flex-direction: column;
-  width: 190px;
 }
 .profile-photo {
-  display: block;
   position: relative;
+  display: block;
   overflow: hidden;
   border-radius: 50%;
 }
@@ -586,19 +582,19 @@ ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transform: translate(-50%, -50%);
 }
 .profile-photo_location {
   width: 67px;
   height: 67px;
 }
 .profile-photo_about {
-  margin-bottom: 23px;
   width: 139px;
   height: 139px;
+  margin-bottom: 23px;
 }
 .profile-card_location {
   display: grid;
