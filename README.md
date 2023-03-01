@@ -59,28 +59,26 @@
 
 The final goal of this educational project is to implement complete landing page according to layout provided by mentor using HTML and CSS.
 
-    The first task (Markup) is to implement landing page according to layout provided by mentor using HTML and CSS with the following criteria:
+  The first task (Markup) is to implement landing page according to layout provided by mentor using HTML and CSS with the following criteria:
 
-      [ ] The page itself must be implemented pixel-perfectly according to provided layout;
+    - The page itself must be implemented pixel-perfectly according to provided layout;
 
-      [ ] All the additional interactive effects must be also completed according to layout (such as hovering, focusing effects, animations etc.);
+    - All the additional interactive effects must be also completed according to layout (such as hovering, focusing effects, animations etc.);
 
-      [ ] Do not use external tools, frameworks and libraries (Bootstrap, JQuery etc.);
+    - Do not use external tools, frameworks and libraries (Bootstrap, JQuery etc.);
 
-      [ ] Allowed to use SCSS, SASS.
+    - Allowed to use SCSS, SASS.
 
-    The goal of the second task (Responsive design) is to complete previously developed page with a piece of responsiveness with the following criteria:
+  The goal of the second task (Responsive design) is to complete previously developed page with a piece of responsiveness with the following criteria:
 
-    [ ] Do not use any external tools, only plain HTML&CSS with JavaScript if necessary;
+    - Do not use any external tools, only plain HTML&CSS with JavaScript if necessary;
 
-    [ ] If provided layout has no frames with examples of responsiveness, discuss the criteria with your
+    - If provided layout has no frames with examples of responsiveness, discuss the criteria with your
     mentor.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
-
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
 - [![HTML][html5]][html5-url]
 - [![CSS][css3]][css3-url]
@@ -93,9 +91,6 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- GETTING STARTED -->
 
 ## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
