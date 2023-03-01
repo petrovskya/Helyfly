@@ -6,14 +6,13 @@
   }
   &__contact {
     margin-left: 36px;
-    font-size: 14px;
-    font-weight: 400;
-    color: #b3b3b3;
+    @include h6;
+    color: $_grey;
     &-phone {
-      color: #37373f;
+      color: $_dark;
       transition: 0.3s;
       &:hover {
-        color: #5286ec;
+        color: $_blue;
       }
     }
   }
@@ -25,20 +24,19 @@
     background-position: center;
 
     &__title {
-      font-size: 40px;
-      font-weight: 700;
+      @include h1;
       line-height: 49px;
-      color: #ffffff;
+      color: $_white;
     }
     &__button {
       position: relative;
       margin-top: 129px;
       padding: 20px 38px 20px;
-      border: 3px solid #ffffff;
+      border: 3px solid $_white;
       border-radius: 3px;
-      font-size: 18px;
+      @include h4;
       font-weight: 900;
-      color: #ffffff;
+      color: $_white;
       transition: 0.5s;
     }
     &__button:hover:before {
@@ -50,7 +48,6 @@
       width: 224px;
       height: 96px;
       border-radius: 5px;
-      font-size: 35px;
       background-image: url('../assets/icons/priceBadge.png');
       background-repeat: no-repeat;
     }
@@ -62,12 +59,11 @@
       left: -33px;
       width: 224px;
       height: 96px;
-      font-size: 35px;
-      font-weight: 800;
+      @include h2;
     }
   }
 }
 .color-text {
-  color: #fc9b09;
+  color: $_orange;
   background: transparent;
 }

@@ -1,17 +1,17 @@
 .booking {
   padding: 50px 0 82px;
-  color: #37373f;
   &__title {
     margin-bottom: 30px;
-    font-size: 20px;
-    font-weight: 500;
+    @include h3;
+    color: $_dark;
     line-height: 29.26px;
   }
   &__form {
     padding: 0 30px;
     max-width: 770px;
-    border: 1px solid #c7c7c7;
-    // color: #37373f;
+    border: 1px solid $_light-grey;
+    @include h4;
+    color: $_dark;
   }
   &__date {
     display: flex;
@@ -19,43 +19,38 @@
     align-items: center;
     gap: 10px;
     padding: 20px 0;
-    font-size: 18px;
-    font-weight: 500;
   }
   &__option {
-    font-size: 18px;
-    font-weight: 400;
     line-height: 26px;
     &-item {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 0;
-      border-top: 0.5px solid #c7c7c7;
+      padding: 10px 0;
+      border-top: 0.5px solid $_light-grey;
     }
     &-details {
       display: grid;
       gap: 10px;
     }
-    &_time {
+    &_time,
+    &_other {
+      font-weight: 400;
     }
     &_price {
       font-weight: 600;
     }
-    &_other {
-    }
     &_button {
       padding: 16px 32px;
-      border: 2px solid #fc9b09;
+      border: 2px solid $_orange;
       border-radius: 3px;
-      font-size: 14px;
-      font-weight: 500;
+      @include h6;
       line-height: 17px;
-      color: #fc9b09;
+      color: $_orange;
       transition: 0.3s;
       &:hover {
-        background-color: #fc9b09;
-        color: #ffffff;
+        background-color: $_orange;
+        color: $_white;
       }
     }
   }

@@ -4,9 +4,8 @@
     gap: 37px;
   }
   &__title {
-    font-size: 20px;
-    font-weight: 500;
-    color: #37373f;
+    @include h3;
+    color: $_dark;
   }
 
   &__slider {
@@ -43,6 +42,6 @@
     margin-bottom: 27px;
     font-size: 17px;
     font-weight: 500;
-    color: #5286ec;
+    color: $_blue;
   }
 }

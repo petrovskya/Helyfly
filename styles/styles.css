@@ -63,6 +63,7 @@ ul {
   border: 3px solid #ffffff;
   border-radius: 3px;
   font-size: 18px;
+  font-weight: 500;
   font-weight: 900;
   color: #ffffff;
   transition: 0.5s;
@@ -76,7 +77,6 @@ ul {
   width: 224px;
   height: 96px;
   border-radius: 5px;
-  font-size: 35px;
   background-image: url("../assets/icons/priceBadge.png");
   background-repeat: no-repeat;
 }
@@ -89,7 +89,7 @@ ul {
   width: 224px;
   height: 96px;
   font-size: 35px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .color-text {
@@ -108,12 +108,12 @@ ul {
 .features__content {
   margin: 0 15px;
   max-width: 100%;
+  color: #37373f;
 }
 .features__title {
   margin-bottom: 10px;
   font-size: 40px;
   font-weight: 500;
-  color: #37373f;
 }
 .features__description {
   margin-bottom: 12px;
@@ -121,7 +121,6 @@ ul {
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
-  color: #37373f;
 }
 .features__list {
   display: grid;
@@ -131,12 +130,10 @@ ul {
   border-bottom: 0.5px solid #c7c7c7;
   font-size: 14px;
   font-weight: 500;
-  color: #37373f;
 }
 .features__list-item {
-  display: grid;
+  display: flex;
   align-items: center;
-  grid-template-columns: 6% 94%;
   gap: 10px;
 }
 .features__preview {
@@ -211,6 +208,8 @@ ul {
 }
 .about__article {
   max-width: 100%;
+  font-size: 16px;
+  font-weight: 400;
   color: #37373f;
 }
 .about__article_subtitle {
@@ -220,13 +219,9 @@ ul {
 }
 .about__article_text {
   margin-bottom: 6px;
-  font-size: 16px;
-  font-weight: 400;
   line-height: 24.18px;
 }
 .about__article_show-more {
-  font-size: 16px;
-  font-weight: 500;
   color: #5286ec;
 }
 .about__card {
@@ -245,18 +240,21 @@ ul {
 
 .booking {
   padding: 50px 0 82px;
-  color: #37373f;
 }
 .booking__title {
   margin-bottom: 30px;
   font-size: 20px;
   font-weight: 500;
+  color: #37373f;
   line-height: 29.26px;
 }
 .booking__form {
   padding: 0 30px;
   max-width: 770px;
   border: 1px solid #c7c7c7;
+  font-size: 18px;
+  font-weight: 500;
+  color: #37373f;
 }
 .booking__date {
   display: flex;
@@ -264,24 +262,23 @@ ul {
   align-items: center;
   gap: 10px;
   padding: 20px 0;
-  font-size: 18px;
-  font-weight: 500;
 }
 .booking__option {
-  font-size: 18px;
-  font-weight: 400;
   line-height: 26px;
 }
 .booking__option-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 10px 0;
   border-top: 0.5px solid #c7c7c7;
 }
 .booking__option-details {
   display: grid;
   gap: 10px;
+}
+.booking__option_time, .booking__option_other {
+  font-weight: 400;
 }
 .booking__option_price {
   font-weight: 600;
@@ -291,7 +288,7 @@ ul {
   border: 2px solid #fc9b09;
   border-radius: 3px;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 17px;
   color: #fc9b09;
   transition: 0.3s;
@@ -305,14 +302,13 @@ ul {
   background: url("../assets/backgrounds/locationBg.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   color: #37373f;
   padding: 20px 0;
 }
 .location__info {
   display: grid;
-  padding: 51px 30px;
   max-width: 420px;
+  padding: 51px 30px;
   background-color: #ffffff;
 }
 .location__slider {
@@ -342,22 +338,24 @@ ul {
   margin-right: 18px;
   width: 61px;
   height: 61px;
-  color: white;
   background: #fc9b09;
   border-radius: 50%;
   text-align: center;
   font-size: 35px;
   font-weight: 700;
+  color: #ffffff;
   line-height: 61px;
 }
 
 .comments {
-  padding: 130px 0 97px 0;
+  padding: 140px 0 85px 0;
 }
 .comments__wrapper {
   display: grid;
   place-self: start;
   max-width: 630px;
+  font-size: 20px;
+  font-weight: 500;
   color: #37373f;
 }
 .comments__title {
@@ -366,7 +364,7 @@ ul {
   font-weight: 500;
 }
 .comments__list {
-  margin-bottom: 47px;
+  margin-bottom: 25px;
 }
 .comments__item {
   display: flex;
@@ -375,8 +373,11 @@ ul {
 }
 .comments__user-content {
   display: grid;
+  margin-top: 5px;
   max-width: 80%;
   border-bottom: 0.5px solid #c7c7c7;
+  font-size: 18px;
+  font-weight: 500;
 }
 .comments__userpic {
   position: relative;
@@ -397,8 +398,6 @@ ul {
 }
 .comments__username {
   margin-bottom: 10px;
-  font-size: 18px;
-  font-weight: 500;
 }
 .comments__user-position {
   margin-bottom: 10px;
@@ -407,7 +406,7 @@ ul {
 }
 .comments__rate {
   display: flex;
-  justify-content: space-between;
+  gap: 70px;
   margin-bottom: 26px;
 }
 .comments__rate_score {
@@ -444,7 +443,7 @@ ul {
   display: block;
   margin: auto;
   position: relative;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: 500;
   color: #5286ec;
 }
@@ -464,7 +463,8 @@ ul {
 }
 
 .footer {
-  padding: 1px 0;
+  font-size: 14px;
+  font-weight: 400;
 }
 .footer__info {
   display: flex;
@@ -486,8 +486,6 @@ ul {
   height: 25.5px;
 }
 .footer__lang-select {
-  font-size: 15px;
-  font-weight: 400;
   color: #37373f;
 }
 .footer__wrapper {
@@ -498,7 +496,8 @@ ul {
   flex-direction: row;
   align-items: center;
   padding: 3px 66px 31px 66px;
-  gap: 276px;
+  gap: 326px;
+  color: #b3b3b3;
 }
 .footer__payment-icons {
   display: flex;
@@ -511,9 +510,6 @@ ul {
   flex-direction: column;
   justify-content: center;
   gap: 7px;
-  font-size: 14px;
-  font-weight: 400;
-  color: #b3b3b3;
   text-align: center;
 }
 .footer__contact-support {
@@ -536,7 +532,7 @@ ul {
   align-items: center;
   gap: 10px;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   color: #37373f;
 }
 .rate_features {
@@ -546,8 +542,8 @@ ul {
 }
 .rate_booking {
   max-width: 440px;
-  padding: 22px 0 50px 0;
-  gap: 10px;
+  padding: 60px 0 50px 0;
+  gap: 5px;
 }
 .rate__text {
   text-align: center;
@@ -617,7 +613,7 @@ ul {
 }
 .profile-more {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   color: #5286ec;
 }
 .profile-more_location {

@@ -1,6 +1,7 @@
 @import 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap';
 @import '../styles/reset';
 @import '../styles/mixins';
+@import '../styles/variables';
 @import '../styles/header';
 @import '../styles/features';
 @import '../styles/gallery';
@@ -24,19 +25,18 @@
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
-  font-size: 18px;
-  font-weight: 400;
-  color: #37373f;
+  @include h4;
+  color: $_dark;
 
   &_features {
     max-width: 569px;
     padding: 20px 110px 25px 0;
-    border-bottom: 0.5px solid #c7c7c7;
+    border-bottom: 0.5px solid $_light-grey;
   }
   &_booking {
     max-width: 440px;
-    padding: 22px 0 50px 0;
-    gap: 10px;
+    padding: 60px 0 50px 0;
+    gap: 5px;
   }
   &__text {
     text-align: center;
@@ -92,9 +92,8 @@
   }
   &-name {
     margin-bottom: 7px;
-    font-size: 18px;
-    font-weight: 500;
-    color: #37373f;
+    @include h4;
+    color: $_dark;
     &_location {
       margin-bottom: 0;
     }
@@ -106,9 +105,8 @@
     }
   }
   &-more {
-    font-size: 14px;
-    font-weight: 500;
-    color: #5286ec;
+    @include h6;
+    color: $_blue;
     &_location {
       text-align: left;
     }

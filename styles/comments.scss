@@ -1,18 +1,18 @@
 .comments {
-  padding: 130px 0 97px 0;
+  padding: 140px 0 85px 0;
   &__wrapper {
     display: grid;
     place-self: start;
     max-width: 630px;
-    color: #37373f;
+    @include h3;
+    color: $_dark;
   }
   &__title {
     margin-bottom: 20px;
-    font-size: 20px;
-    font-weight: 500;
+    @include h3;
   }
   &__list {
-    margin-bottom: 47px;
+    margin-bottom: 25px;
   }
   &__item {
     display: flex;
@@ -21,8 +21,10 @@
   }
   &__user-content {
     display: grid;
+    margin-top: 5px;
     max-width: 80%;
-    border-bottom: 0.5px solid #c7c7c7;
+    border-bottom: 0.5px solid $_light-grey;
+    @include h4;
   }
   &__userpic {
     position: relative;
@@ -43,17 +45,14 @@
   }
   &__username {
     margin-bottom: 10px;
-    font-size: 18px;
-    font-weight: 500;
   }
   &__user-position {
     margin-bottom: 10px;
-    font-size: 14px;
-    font-weight: 400;
+    @include h6;
   }
   &__rate {
     display: flex;
-    justify-content: space-between;
+    gap: 70px;
     margin-bottom: 26px;
     &_score {
       width: 118px;
@@ -61,9 +60,8 @@
     }
     &_status {
       position: relative;
-      font-size: 14px;
-      font-weight: 400;
-      color: #b3b3b3;
+      @include h6;
+      color: $_grey;
       &::before {
         content: url('../assets/icons/CheckIcon.svg');
         display: block;
@@ -75,24 +73,21 @@
   }
   &__text {
     margin-bottom: 22px;
-    font-size: 16px;
-    font-weight: 400;
+    @include h5;
     text-align: left;
     line-height: 24px;
   }
   &__date {
     margin-bottom: 35px;
-    font-size: 14px;
-    font-weight: 400;
-    color: #b3b3b3;
+    @include h6;
+    color: $_grey;
   }
   &__dropdown-button {
     display: block;
     margin: auto;
     position: relative;
-    font-size: 17px;
-    font-weight: 500;
-    color: #5286ec;
+    @include h4;
+    color: $_blue;
     &::before {
       @include arrow-icon;
       top: 0px;

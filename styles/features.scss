@@ -8,12 +8,12 @@
   &__content {
     margin: 0 15px;
     max-width: 100%;
+    color: $_dark;
   }
   &__title {
     margin-bottom: 10px;
     font-size: 40px;
     font-weight: 500;
-    color: #37373f;
   }
   &__description {
     margin-bottom: 12px;
@@ -21,22 +21,18 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 26px;
-    color: #37373f;
   }
   &__list {
     display: grid;
     align-items: center;
     gap: 17px;
     padding-bottom: 39px;
-    border-bottom: 0.5px solid #c7c7c7;
+    border-bottom: 0.5px solid $_light-grey;
     font-size: 14px;
     font-weight: 500;
-    color: #37373f;
-
     &-item {
-      display: grid;
+      display: flex;
       align-items: center;
-      grid-template-columns: 6% 94%;
       gap: 10px;
     }
   }

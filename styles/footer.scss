@@ -1,5 +1,5 @@
 .footer {
-  padding: 1px 0;
+  @include h6;
   &__info {
     display: flex;
     justify-content: space-between;
@@ -22,9 +22,7 @@
   }
 
   &__lang-select {
-    font-size: 15px;
-    font-weight: 400;
-    color: #37373f;
+    color: $_dark;
   }
   &__wrapper {
     background-color: #faf9f8;
@@ -34,7 +32,8 @@
     flex-direction: row;
     align-items: center;
     padding: 3px 66px 31px 66px;
-    gap: 276px;
+    gap: 326px;
+    color: $_grey;
   }
   &__payment-icons {
     display: flex;
@@ -47,12 +46,9 @@
     flex-direction: column;
     justify-content: center;
     gap: 7px;
-    font-size: 14px;
-    font-weight: 400;
-    color: #b3b3b3;
     text-align: center;
   }
   &__contact-support {
-    color: #b3b3b3;
+    color: $_grey;
   }
 }
