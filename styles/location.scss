@@ -1,46 +1,46 @@
 .location {
-  background: url('../assets/backgrounds/locationBg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: $_dark;
   padding: 20px 0;
+  background: url('../assets/backgrounds/locationBg.png') center/cover no-repeat;
+  color: $_dark;
+
   &__info {
     display: grid;
     max-width: 420px;
     padding: 51px 30px;
     background-color: $_white;
   }
+
   &__slider {
     counter-reset: myCounter;
     font-size: 18px;
+
     &-item {
-      list-style: none;
-      margin-bottom: 34px;
       display: flex;
+      margin-bottom: 34px;
+
       &_text {
         display: grid;
         gap: 12px;
       }
+
       &_title {
         font-weight: 500;
       }
-      &_subtitle {
-        font-weight: 400;
-      }
     }
+
     &-item::before {
-      counter-increment: myCounter;
-      content: counter(myCounter);
       display: inline-block;
       align-items: center;
       margin-right: 18px;
       width: 61px;
       height: 61px;
-      background: $_orange;
       border-radius: 50%;
-      text-align: center;
+      counter-increment: myCounter;
+      content: counter(myCounter);
+      background: $_orange;
       @include h2;
       color: $_white;
+      text-align: center;
       line-height: 61px;
     }
   }

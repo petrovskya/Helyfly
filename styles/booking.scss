@@ -1,18 +1,22 @@
 .booking {
   padding: 50px 0 82px;
+
   &__title {
     margin-bottom: 30px;
-    @include h3;
+    @include font-properties(20px, 500);
     color: $_dark;
     line-height: 29.26px;
   }
+
   &__form {
     padding: 0 30px;
     max-width: 770px;
     border: 1px solid $_light-grey;
-    @include h4;
+    font-size: 18px;
+    font-weight: 400;
     color: $_dark;
   }
+
   &__date {
     display: flex;
     justify-content: flex-start;
@@ -20,8 +24,10 @@
     gap: 10px;
     padding: 20px 0;
   }
+
   &__option {
     line-height: 26px;
+
     &-item {
       display: flex;
       justify-content: space-between;
@@ -29,25 +35,25 @@
       padding: 10px 0;
       border-top: 0.5px solid $_light-grey;
     }
+
     &-details {
       display: grid;
       gap: 10px;
     }
-    &_time,
-    &_other {
-      font-weight: 400;
-    }
+
     &_price {
       font-weight: 600;
     }
+
     &_button {
       padding: 16px 32px;
       border: 2px solid $_orange;
       border-radius: 3px;
-      @include h6;
+      font-size: 14px;
       line-height: 17px;
       color: $_orange;
       transition: 0.3s;
+
       &:hover {
         background-color: $_orange;
         color: $_white;

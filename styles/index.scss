@@ -10,6 +10,7 @@
 @import '../styles/location';
 @import '../styles/comments';
 @import '../styles/footer';
+
 .logo {
   height: 23px;
 }
@@ -33,14 +34,17 @@
     padding: 20px 110px 25px 0;
     border-bottom: 0.5px solid $_light-grey;
   }
+
   &_booking {
     max-width: 440px;
-    padding: 60px 0 50px 0;
+    padding: 60px 0 50px;
     gap: 5px;
   }
+
   &__text {
     text-align: center;
   }
+
   &__score {
     width: 118px;
     height: 17px;
@@ -50,22 +54,26 @@
 .profile {
   display: flex;
   align-items: center;
+
   &_location {
     width: 100%;
     justify-content: flex-start;
     flex-direction: row;
     gap: 10px;
   }
+
   &_about {
     width: 190px;
     justify-content: center;
     flex-direction: column;
   }
+
   &-photo {
     position: relative;
     display: block;
     overflow: hidden;
     border-radius: 50%;
+
     &-img {
       position: absolute;
       top: 50%;
@@ -76,10 +84,12 @@
       transform: translate(-50%, -50%);
     }
   }
+
   &-photo_location {
     width: 67px;
     height: 67px;
   }
+
   &-photo_about {
     width: 139px;
     height: 139px;
@@ -90,26 +100,33 @@
     display: grid;
     gap: 5px;
   }
+
   &-name {
     margin-bottom: 7px;
     @include h4;
     color: $_dark;
+
     &_location {
       margin-bottom: 0;
     }
   }
+
   &-position {
     margin-bottom: 11px;
+
     &_location {
       margin-bottom: 0;
     }
   }
+
   &-more {
     @include h6;
     color: $_blue;
+
     &_location {
       text-align: left;
     }
+
     &_about {
       width: 200px;
       text-align: center;

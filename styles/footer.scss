@@ -1,19 +1,21 @@
 .footer {
-  @include h6;
+  @include font-properties(14);
+
   &__info {
     display: flex;
     justify-content: space-between;
-    padding: 0px 66px 41px 66px;
+    padding: 0 66px 41px;
 
     &_socials {
       display: flex;
-      flex-direction: row;
       gap: 30px;
+
       &-links {
         display: flex;
         align-items: center;
         gap: 30px;
       }
+
       &-link {
         width: 25.5px;
         height: 25.5px;
@@ -24,23 +26,26 @@
   &__lang-select {
     color: $_dark;
   }
+
   &__wrapper {
     background-color: #faf9f8;
   }
+
   &__other {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    padding: 3px 66px 31px 66px;
+    padding: 3px 66px 31px;
     gap: 326px;
     color: $_grey;
   }
+
   &__payment-icons {
     display: flex;
     gap: 20px;
     width: 39px;
     height: 25px;
   }
+
   &__copyright {
     display: flex;
     flex-direction: column;
@@ -48,6 +53,7 @@
     gap: 7px;
     text-align: center;
   }
+
   &__contact-support {
     color: $_grey;
   }

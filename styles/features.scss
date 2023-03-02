@@ -1,20 +1,24 @@
 .features {
   padding: 70px 0 30px;
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
     margin: 0 -15px;
   }
+
   &__content {
     margin: 0 15px;
     max-width: 100%;
     color: $_dark;
   }
+
   &__title {
     margin-bottom: 10px;
     font-size: 40px;
     font-weight: 500;
   }
+
   &__description {
     margin-bottom: 12px;
     max-width: 480px;
@@ -22,6 +26,7 @@
     font-weight: 400;
     line-height: 26px;
   }
+
   &__list {
     display: grid;
     align-items: center;
@@ -30,14 +35,17 @@
     border-bottom: 0.5px solid $_light-grey;
     font-size: 14px;
     font-weight: 500;
+
     &-item {
       display: flex;
       align-items: center;
       gap: 10px;
     }
   }
+
   &__preview {
     margin: 0 15px;
+
     &-img {
       display: block;
       max-width: 100%;

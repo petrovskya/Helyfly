@@ -1,31 +1,37 @@
 .comments {
-  padding: 140px 0 85px 0;
+  padding: 140px 0 85px;
+
   &__wrapper {
     display: grid;
     place-self: start;
     max-width: 630px;
-    @include h3;
+    @include font-properties(20px, 500);
     color: $_dark;
   }
+
   &__title {
     margin-bottom: 20px;
-    @include h3;
+    @include font-properties(20px, 500);
   }
+
   &__list {
     margin-bottom: 25px;
   }
+
   &__item {
     display: flex;
     gap: 20px;
     padding: 30px 0 0 0;
   }
+
   &__user-content {
     display: grid;
     margin-top: 5px;
     max-width: 80%;
     border-bottom: 0.5px solid $_light-grey;
-    @include h4;
+    @include font-properties(18px, 500);
   }
+
   &__userpic {
     position: relative;
     display: block;
@@ -33,6 +39,7 @@
     width: 101px;
     height: 101px;
     border-radius: 50%;
+
     &_img {
       position: absolute;
       top: 50%;
@@ -43,25 +50,31 @@
       object-fit: cover;
     }
   }
+
   &__username {
     margin-bottom: 10px;
   }
+
   &__user-position {
     margin-bottom: 10px;
     @include h6;
   }
+
   &__rate {
     display: flex;
     gap: 70px;
     margin-bottom: 26px;
+
     &_score {
       width: 118px;
       height: 17px;
     }
+
     &_status {
       position: relative;
       @include h6;
       color: $_grey;
+
       &::before {
         content: url('../assets/icons/CheckIcon.svg');
         display: block;
@@ -71,31 +84,36 @@
       }
     }
   }
+
   &__text {
     margin-bottom: 22px;
     @include h5;
     text-align: left;
     line-height: 24px;
   }
+
   &__date {
     margin-bottom: 35px;
     @include h6;
     color: $_grey;
   }
+
   &__dropdown-button {
     display: block;
     margin: auto;
     position: relative;
     @include h4;
     color: $_blue;
+
     &::before {
       @include arrow-icon;
-      top: 0px;
+      top: 0;
       left: -22px;
     }
+
     &::after {
       @include arrow-icon;
-      top: 0px;
+      top: 0;
       left: 175px;
     }
   }
