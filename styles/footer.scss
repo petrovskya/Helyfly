@@ -5,6 +5,9 @@
     display: flex;
     justify-content: space-between;
     padding: 0 66px 41px;
+    @media (max-width: 768px) {
+      padding: 27px 0;
+    }
 
     &_socials {
       display: flex;
@@ -14,6 +17,9 @@
         display: flex;
         align-items: center;
         gap: 30px;
+        @media (max-width: 768px) {
+          gap: 15px;
+        }
       }
 
       &-link {
@@ -29,14 +35,22 @@
 
   &__wrapper {
     background-color: #faf9f8;
+    @media (max-width: 768px) {
+      border-top: 1px solid $_grey;
+    }
   }
 
   &__other {
-    display: flex;
+    display: grid;
+    grid-template-columns: 100px 1fr;
     align-items: center;
     padding: 3px 66px 31px;
-    gap: 326px;
     color: $_grey;
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 24px;
+      padding: 26px 33px 20px;
+    }
   }
 
   &__payment-icons {
