@@ -26,16 +26,20 @@
 
 .rate {
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: nowrap;
   align-items: center;
   gap: 10px;
   @include h4;
   color: $_dark;
+  @media (max-width: 320px) {
+    font-size: 14px;
+    gap: 20px;
+  }
 
   &_features {
     grid-area: rate;
     max-width: 569px;
-    padding: 20px 110px 25px 0;
+    padding: 20px 0 25px;
     border-bottom: 0.5px solid $_light-grey;
   }
 
@@ -46,7 +50,7 @@
   }
 
   &__text {
-    text-align: center;
+    text-align: left;
   }
 
   &__score {

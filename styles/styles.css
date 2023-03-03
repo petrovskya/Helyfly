@@ -30,6 +30,33 @@ ul {
   align-items: center;
   padding: 39px 0 38px;
 }
+@media (max-width: 440px) {
+  .header__contact {
+    display: none;
+  }
+}
+@media (max-width: 320px) {
+  .header__wrapper {
+    padding: 23px 0;
+  }
+  .header__wrapper::after {
+    content: url("../assets/icons/userIcon.svg");
+    position: absolute;
+    display: block;
+    top: 23px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+  }
+  .header__wrapper::before {
+    content: "Москва";
+    position: absolute;
+    display: block;
+    top: 23px;
+    right: 120px;
+    color: #5286ec;
+  }
+}
 .header__contact {
   margin-left: 36px;
   font-size: 14px;
@@ -45,16 +72,26 @@ ul {
 }
 .header-banner {
   padding: 286px 0 260px;
-  background-image: url("../assets/backgrounds/headerBannerBg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background: url("../assets/backgrounds/headerBannerBg.png") center/cover no-repeat;
+}
+@media (max-width: 440px) {
+  .header-banner {
+    padding: 141px 0 155px;
+    background-image: url("../assets/backgrounds/headerMobBg.png") fixed;
+  }
 }
 .header-banner__title {
+  max-width: 75%;
   font-size: 40px;
   font-weight: 700;
   line-height: 49px;
   color: #fff;
+}
+@media (max-width: 440px) {
+  .header-banner__title {
+    max-width: 85%;
+    font-size: 32px;
+  }
 }
 .header-banner__button {
   position: relative;
@@ -123,12 +160,22 @@ ul {
   font-size: 40px;
   font-weight: 500;
 }
+@media (max-width: 768px) {
+  .features__title {
+    margin: 0 auto 13px;
+  }
+}
 .features__description {
   margin-bottom: 12px;
   max-width: 480px;
   font-size: 18px;
   font-weight: 400;
   line-height: 26px;
+}
+@media (max-width: 768px) {
+  .features__description {
+    margin-bottom: 30px;
+  }
 }
 .features__list {
   display: grid;
@@ -153,6 +200,21 @@ ul {
   display: block;
   max-width: 100%;
   border-radius: 4px;
+}
+
+.mobile {
+  display: none;
+}
+@media (max-width: 440px) {
+  .mobile {
+    display: flex;
+  }
+}
+
+@media (max-width: 440px) {
+  .web {
+    display: none;
+  }
 }
 
 .gallery__wrapper {
@@ -599,17 +661,23 @@ ul {
 
 .rate {
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: nowrap;
   align-items: center;
   gap: 10px;
   font-size: 18px;
   font-weight: 500;
   color: #37373f;
 }
+@media (max-width: 320px) {
+  .rate {
+    font-size: 14px;
+    gap: 20px;
+  }
+}
 .rate_features {
   grid-area: rate;
   max-width: 569px;
-  padding: 20px 110px 25px 0;
+  padding: 20px 0 25px;
   border-bottom: 0.5px solid #c7c7c7;
 }
 .rate_booking {
@@ -618,7 +686,7 @@ ul {
   gap: 5px;
 }
 .rate__text {
-  text-align: center;
+  text-align: left;
 }
 .rate__score {
   width: 118px;
