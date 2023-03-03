@@ -1,0 +1,77 @@
+.header {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    padding: 39px 0 38px;
+  }
+
+  &__contact {
+    margin-left: 36px;
+    @include h6;
+    color: $_grey;
+
+    &-phone {
+      color: $_dark;
+      transition: 0.3s;
+
+      &:hover {
+        color: $_blue;
+      }
+    }
+  }
+
+  &-banner {
+    padding: 286px 0 260px;
+    background-image: url('../assets/backgrounds/headerBannerBg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &__title {
+      @include h1;
+      line-height: 49px;
+      color: $_white;
+    }
+
+    &__button {
+      position: relative;
+      margin-top: 129px;
+      padding: 20px 38px;
+      border: 3px solid $_white;
+      border-radius: 3px;
+      font-size: 18px;
+      font-weight: 900;
+      color: $_white;
+      transition: 0.5s;
+    }
+
+    &__button:hover:before {
+      content: ' ';
+      position: absolute;
+      display: block;
+      top: -110px;
+      left: -5px;
+      width: 224px;
+      height: 96px;
+      border-radius: 5px;
+      background-image: url('../assets/icons/priceBadge.png');
+      background-repeat: no-repeat;
+    }
+
+    &__button:hover::after {
+      content: '1500₽';
+      position: absolute;
+      display: block;
+      top: -76px;
+      left: -33px;
+      width: 224px;
+      height: 96px;
+      @include h2;
+    }
+  }
+}
+
+.color-text {
+  color: $_orange;
+  background: transparent;
+}

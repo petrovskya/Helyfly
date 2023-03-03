@@ -1,0 +1,51 @@
+.about {
+  padding: 37px 0 51px;
+  border-top: 0.5px solid $_light-grey;
+  border-bottom: 0.5px solid $_light-grey;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -15px;
+  }
+
+  &__info {
+    display: grid;
+    gap: 40px;
+    max-width: 50%;
+    margin: 0 15px;
+  }
+
+  &__article {
+    max-width: 100%;
+    @include font-properties(16px);
+    color: $_dark;
+
+    &_subtitle {
+      margin-bottom: 14px;
+      @include font-properties(18px, 500);
+    }
+
+    &_text {
+      margin-bottom: 6px;
+      line-height: 24.18px;
+    }
+
+    &_show-more {
+      color: $_blue;
+    }
+  }
+
+  &__card {
+    display: flex;
+    align-items: flex-start;
+    max-width: 50%;
+    margin: 0 15px;
+    padding: 31px 113px 0 0;
+  }
+}
+
+.heart-icon {
+  width: 31px;
+  margin: -15px 0 0 20px;
+}
