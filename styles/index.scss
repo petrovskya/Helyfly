@@ -13,6 +13,9 @@
 
 .logo {
   height: 23px;
+  @media (max-width: 768px) {
+    height: 15px;
+  }
 }
 
 .container {
@@ -30,6 +33,7 @@
   color: $_dark;
 
   &_features {
+    grid-area: rate;
     max-width: 569px;
     padding: 20px 110px 25px 0;
     border-bottom: 0.5px solid $_light-grey;
@@ -56,16 +60,30 @@
   align-items: center;
 
   &_location {
-    width: 100%;
-    justify-content: flex-start;
     flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
     gap: 10px;
   }
 
   &_about {
-    width: 190px;
-    justify-content: center;
+    position: relative;
     flex-direction: column;
+    justify-content: center;
+    width: 190px;
+
+    &::before {
+      content: url('../assets/icons/heartIcon.svg');
+      position: absolute;
+      display: block;
+      top: -15px;
+      left: 220px;
+      width: 31px;
+      height: 27px;
+      @media (max-width: 768px) {
+        left: 200px;
+      }
+    }
   }
 
   &-photo {
