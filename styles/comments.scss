@@ -126,10 +126,10 @@
     color: $_grey;
   }
 
-  &__dropdown-button {
+  &__dropdown {
+    position: relative;
     display: block;
     margin: auto;
-    position: relative;
     @include h4;
     color: $_blue;
 
@@ -143,6 +143,9 @@
       @include arrow-icon;
       top: 0;
       left: 175px;
+    }
+    &:hover {
+      border-bottom: 1px solid $_light-grey;
     }
   }
 }

@@ -18,6 +18,11 @@
     @media (max-width: 768px) {
       grid-template-columns: repeat(2, 1fr);
     }
+    @media (max-width: 480px) {
+      grid-template-columns: repeat(8, 275px);
+      overflow-x: scroll;
+      height: 185px;
+    }
 
     &-item {
       position: relative;
@@ -29,6 +34,10 @@
       transition: 0.3s;
       @media (max-width: 768px) {
         max-width: 100%;
+      }
+      @media (max-width: 480px) {
+        max-width: 275px;
+        height: 185px;
       }
 
       &-img {
@@ -49,11 +58,26 @@
   }
 
   &__dropdown {
-    display: flex;
-    justify-content: center;
+    position: relative;
+    margin: auto;
     margin-bottom: 27px;
     font-size: 17px;
     font-weight: 500;
     color: $_blue;
+
+    &::before {
+      @include arrow-icon;
+      top: 0;
+      left: -22px;
+    }
+
+    &::after {
+      @include arrow-icon;
+      top: 0;
+      left: 175px;
+    }
+    &:hover {
+      border-bottom: 1px solid $_light-grey;
+    }
   }
 }
