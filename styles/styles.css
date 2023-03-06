@@ -460,38 +460,51 @@ ul {
   padding: 140px 0 85px;
 }
 .comments__wrapper {
-  display: grid;
-  place-self: start;
   max-width: 630px;
   font-size: 20px;
   font-weight: 500;
   color: #37373f;
+}
+@media (max-width: 786px) {
+  .comments__wrapper {
+    max-width: 100%;
+  }
 }
 .comments__title {
   margin-bottom: 20px;
   font-size: 20px;
   font-weight: 500;
 }
+@media (max-width: 786px) {
+  .comments__title {
+    font-size: 28px;
+    text-align: center;
+  }
+}
 .comments__list {
   margin-bottom: 25px;
 }
 .comments__item {
-  display: flex;
-  gap: 20px;
-  padding: 30px 0 0 0;
-}
-.comments__user-content {
   display: grid;
-  margin-top: 5px;
-  max-width: 80%;
-  border-bottom: 0.5px solid #c7c7c7;
+  grid-template-columns: 105px 19% 62%;
+  grid-template-areas: "userpic username ." "userpic userposition ." "userpic score status" ". text text" ". date date";
+  gap: 10px;
+  padding: 30px 0 0 0;
   font-size: 18px;
   font-weight: 500;
+}
+@media (max-width: 786px) {
+  .comments__item {
+    grid-template-columns: 85px 70%;
+    grid-template-areas: "userpic username" "userpic userposition" "userpic score" "status status" "text text" "date date";
+  }
 }
 .comments__userpic {
   position: relative;
   display: block;
+  grid-area: userpic;
   overflow: hidden;
+  margin-right: 10px;
   width: 101px;
   height: 101px;
   border-radius: 50%;
@@ -505,45 +518,60 @@ ul {
   transform: translate(-50%, -50%);
   object-fit: cover;
 }
+@media (max-width: 786px) {
+  .comments__userpic {
+    width: 84px;
+    height: 84px;
+  }
+}
 .comments__username {
-  margin-bottom: 10px;
+  display: grid;
+  grid-area: username;
+  padding-top: 5px;
 }
 .comments__user-position {
-  margin-bottom: 10px;
+  display: grid;
+  grid-area: userposition;
   font-size: 14px;
   font-weight: 400;
 }
-.comments__rate {
-  display: flex;
-  gap: 70px;
-  margin-bottom: 26px;
-}
-.comments__rate_score {
+.comments__rate-score {
+  grid-area: score;
   width: 118px;
   height: 17px;
 }
-.comments__rate_status {
+.comments__rate-status {
   position: relative;
+  grid-area: status;
+  margin-left: 70px;
   font-size: 14px;
   font-weight: 400;
   color: #b3b3b3;
 }
-.comments__rate_status::before {
+.comments__rate-status::before {
   content: url("../assets/icons/CheckIcon.svg");
   display: block;
   position: absolute;
   top: 2px;
   left: -20px;
 }
+@media (max-width: 786px) {
+  .comments__rate-status {
+    margin-left: 20px;
+  }
+}
 .comments__text {
-  margin-bottom: 22px;
+  grid-area: text;
+  margin-bottom: 12px;
   font-size: 16px;
   font-weight: 400;
   text-align: left;
   line-height: 24px;
 }
 .comments__date {
-  margin-bottom: 35px;
+  grid-area: date;
+  padding-bottom: 35px;
+  border-bottom: 0.5px solid #c7c7c7;
   font-size: 14px;
   font-weight: 400;
   color: #b3b3b3;

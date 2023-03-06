@@ -1,6 +1,8 @@
 .gallery {
   &__wrapper {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     gap: 37px;
   }
 
@@ -12,16 +14,22 @@
   &__slider {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 13px;
+    grid-gap: 13px;
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
 
     &-item {
       position: relative;
       display: block;
       overflow: hidden;
-      max-width: 276px;
+      max-width: 286px;
       height: 186px;
       border-radius: 4px;
       transition: 0.3s;
+      @media (max-width: 768px) {
+        max-width: 100%;
+      }
 
       &-img {
         position: absolute;
