@@ -8,11 +8,6 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 'info card';
     grid-column-gap: 15px;
-    @media (max-width: 768px) {
-      grid-template-columns: 1fr;
-      grid-template-areas: 'card' 'info';
-      grid-row-gap: 25px;
-    }
   }
 
   &__info {
@@ -34,9 +29,6 @@
     &_text {
       margin-bottom: 6px;
       line-height: 24.18px;
-      @media (max-width: 768px) {
-        text-align: left;
-      }
     }
 
     &_show-more {
@@ -50,13 +42,32 @@
     justify-content: center;
     align-items: flex-start;
     padding: 31px 0 0 35px;
-    @media (max-width: 768px) {
-      padding: 31px 0;
-    }
   }
 }
 
 .heart-icon {
   width: 31px;
   margin: -15px 0 0 20px;
+}
+
+@media (max-width: 768px) {
+  .about {
+    &__wrapper {
+      grid-template-columns: 1fr;
+      grid-template-areas: 'card' 'info';
+      grid-row-gap: 25px;
+    }
+
+    &__article {
+      &_text {
+        text-align: left;
+      }
+    }
+
+    &__card {
+      @media (max-width: 768px) {
+        padding: 31px 0;
+      }
+    }
+  }
 }

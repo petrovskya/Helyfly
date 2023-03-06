@@ -6,10 +6,6 @@
     @include font-properties(20px, 500);
     color: $_dark;
     line-height: 29.26px;
-    @media (max-width: 480px) {
-      @include font-properties(26px, 400);
-      text-align: center;
-    }
   }
 
   &__form {
@@ -19,9 +15,6 @@
     font-size: 18px;
     font-weight: 400;
     color: $_dark;
-    @media (max-width: 480px) {
-      padding: 0;
-    }
   }
 
   &__date {
@@ -30,14 +23,6 @@
     align-items: center;
     gap: 10px;
     padding: 20px 0;
-    @media (max-width: 480px) {
-      justify-content: center;
-      border-bottom: 0.5px solid $_light-grey;
-
-      .calendar-icon {
-        display: none;
-      }
-    }
   }
 
   &__option {
@@ -49,13 +34,6 @@
       align-items: center;
       padding: 10px 0;
       border-top: 0.5px solid $_light-grey;
-      @media (max-width: 480px) {
-        display: grid;
-        gap: 20px;
-        padding: 30px 20px;
-        border-top: none;
-        border-bottom: 0.5px solid $_light-grey;
-      }
     }
 
     &-details {
@@ -80,6 +58,36 @@
         background-color: $_orange;
         color: $_white;
       }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .booking {
+    &__title {
+      @include font-properties(26px, 400);
+      text-align: center;
+    }
+
+    &__form {
+      padding: 0;
+    }
+
+    &__date {
+      justify-content: center;
+      border-bottom: 0.5px solid $_light-grey;
+
+      .calendar-icon {
+        display: none;
+      }
+    }
+
+    &__option {
+      display: grid;
+      gap: 20px;
+      padding: 30px 20px;
+      border-top: none;
+      border-bottom: 0.5px solid $_light-grey;
     }
   }
 }

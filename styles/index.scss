@@ -13,9 +13,6 @@
 
 .logo {
   height: 23px;
-  @media (max-width: 768px) {
-    height: 15px;
-  }
 }
 
 .container {
@@ -31,10 +28,6 @@
   gap: 10px;
   @include h4;
   color: $_dark;
-  @media (max-width: 320px) {
-    font-size: 14px;
-    gap: 20px;
-  }
 
   &_features {
     grid-area: rate;
@@ -47,11 +40,6 @@
     max-width: 440px;
     padding: 60px 0 50px;
     gap: 5px;
-    @media (max-width: 480px) {
-      font-size: 14px;
-      gap: 20px;
-      padding: 60px 10px 50px;
-    }
   }
 
   &__text {
@@ -73,15 +61,6 @@
     justify-content: flex-start;
     width: 100%;
     gap: 10px;
-
-    @media (max-width: 768px) {
-      padding: 35px 10px 20px 30px;
-      border: 1px solid rgba(167, 167, 167, 0.71);
-      border-top: none;
-      display: grid;
-      grid-template-columns: 67px 75%;
-      align-items: flex-start;
-    }
   }
 
   &_about {
@@ -98,9 +77,6 @@
       left: 220px;
       width: 31px;
       height: 27px;
-      @media (max-width: 768px) {
-        left: 200px;
-      }
     }
   }
 
@@ -144,9 +120,6 @@
 
     &_location {
       margin-bottom: 0;
-      @media (max-width: 480px) {
-        font-size: 16px;
-      }
     }
   }
 
@@ -170,5 +143,48 @@
       width: 200px;
       text-align: center;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    height: 15px;
+  }
+  .profile {
+    &_location {
+      padding: 35px 10px 20px 30px;
+      border: 1px solid rgba(167, 167, 167, 0.71);
+      border-top: none;
+      display: grid;
+      grid-template-columns: 67px 75%;
+      align-items: flex-start;
+    }
+    &_about {
+      &::before {
+        left: 200px;
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .rate {
+    &_booking {
+      font-size: 14px;
+      gap: 20px;
+      padding: 60px 10px 50px;
+    }
+  }
+  .profile {
+    &-name {
+      &_location {
+        font-size: 16px;
+      }
+    }
+  }
+}
+@media (max-width: 320px) {
+  .rate {
+    font-size: 14px;
+    gap: 20px;
   }
 }

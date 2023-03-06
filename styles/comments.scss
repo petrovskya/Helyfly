@@ -1,24 +1,15 @@
 .comments {
   padding: 140px 0 85px;
-  @media (max-width: 786px) {
-    padding: 40px 0 85px;
-  }
+
   &__wrapper {
     max-width: 630px;
     @include font-properties(20px, 500);
     color: $_dark;
-    @media (max-width: 786px) {
-      max-width: 100%;
-    }
   }
 
   &__title {
     margin-bottom: 20px;
     @include font-properties(20px, 500);
-    @media (max-width: 786px) {
-      font-size: 28px;
-      text-align: center;
-    }
   }
 
   &__list {
@@ -37,17 +28,6 @@
     gap: 10px;
     padding: 30px 0 0 0;
     @include font-properties(18px, 500);
-
-    @media (max-width: 786px) {
-      grid-template-columns: 85px 70%;
-      grid-template-areas:
-        'userpic username'
-        'userpic userposition'
-        'userpic score'
-        'status status'
-        'text text'
-        'date date';
-    }
   }
 
   &__userpic {
@@ -68,10 +48,6 @@
       height: 100%;
       transform: translate(-50%, -50%);
       object-fit: cover;
-    }
-    @media (max-width: 786px) {
-      width: 84px;
-      height: 84px;
     }
   }
 
@@ -106,9 +82,6 @@
       position: absolute;
       top: 2px;
       left: -20px;
-    }
-    @media (max-width: 786px) {
-      margin-left: 20px;
     }
   }
 
@@ -146,8 +119,44 @@
       top: 0;
       left: 175px;
     }
+
     &:hover {
       border-bottom: 1px solid $_light-grey;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .comments {
+    padding: 40px 0 85px;
+
+    &__wrapper {
+      max-width: 100%;
+    }
+
+    &__title {
+      font-size: 28px;
+      text-align: center;
+    }
+
+    &__item {
+      grid-template-columns: 85px 70%;
+      grid-template-areas:
+        'userpic username'
+        'userpic userposition'
+        'userpic score'
+        'status status'
+        'text text'
+        'date date';
+    }
+
+    &__userpic {
+      width: 84px;
+      height: 84px;
+    }
+
+    &__rate-status {
+      margin-left: 20px;
     }
   }
 }

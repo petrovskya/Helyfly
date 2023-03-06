@@ -12,14 +12,6 @@
       'content preview'
       'rate .';
     grid-column-gap: 15px;
-    @media (max-width: 768px) {
-      grid-template-columns: 1fr;
-      grid-template-areas:
-        'title'
-        'preview'
-        'content'
-        'rate';
-    }
   }
 
   &__content {
@@ -28,9 +20,6 @@
   }
 
   &__title {
-    @media (max-width: 768px) {
-      margin: 0 auto 13px;
-    }
     grid-area: title;
     margin-bottom: 10px;
     font-size: 40px;
@@ -43,9 +32,6 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 26px;
-    @media (max-width: 768px) {
-      margin-bottom: 30px;
-    }
   }
 
   &__list {
@@ -77,12 +63,32 @@
 }
 .mobile {
   display: none;
-  @media (max-width: 440px) {
-    display: flex;
+}
+
+@media (max-width: 768px) {
+  .features {
+    &__wrapper {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'title'
+        'preview'
+        'content'
+        'rate';
+    }
+    &__title {
+      margin: 0 auto 13px;
+    }
+    &__description {
+      margin-bottom: 30px;
+    }
   }
 }
-.web {
-  @media (max-width: 440px) {
+
+@media (max-width: 440px) {
+  .mobile {
+    display: flex;
+  }
+  .web {
     display: none;
   }
 }
