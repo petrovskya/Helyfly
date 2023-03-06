@@ -45,3 +45,135 @@
     }
   }
 }
+
+.location-mob {
+  display: none;
+}
+.location-web {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .location {
+    height: 423px;
+    background-position: 55%;
+  }
+
+  .location-mob {
+    display: block;
+    padding: 52px 5% 0;
+    .location-wrapper {
+      padding: 52px 0;
+    }
+    .location__slider {
+      position: relative;
+    }
+
+    .slider {
+      position: relative;
+      overflow: hidden;
+      padding: 20px 26px 0;
+      height: 220px;
+      width: 100%;
+      border: 1px solid rgba(167, 167, 167, 0.71);
+      border-bottom: none;
+    }
+
+    .slider-input:checked + .slider-item {
+      position: static;
+      opacity: 1;
+    }
+
+    .slider-item {
+      display: grid;
+      place-items: center;
+      position: absolute;
+      padding: 20px 0;
+      gap: 10px;
+      opacity: 0;
+      font-size: 18px;
+      &_numeration {
+        width: 61px;
+        height: 61px;
+        margin-bottom: 10px;
+        border-radius: 50%;
+        background: $_orange;
+        @include h2;
+        color: $_white;
+        text-align: center;
+        line-height: 61px;
+      }
+      &_title {
+        font-weight: 500;
+      }
+    }
+
+    .slider-control {
+      display: none;
+      position: absolute;
+      top: 25%;
+      color: $_light-grey;
+      font-size: 40px;
+      transform: translate(0, -25%);
+      z-index: 10;
+    }
+
+    .slider-control.prev {
+      left: 5%;
+    }
+    .slider-control.next {
+      right: 5%;
+    }
+
+    .slider-control:hover {
+      color: $_orange;
+    }
+
+    #slider-1:checked ~ .control-1,
+    #slider-2:checked ~ .control-2,
+    #slider-3:checked ~ .control-3 {
+      display: block;
+    }
+
+    .slider-dots {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      bottom: 5%;
+      left: 0;
+      right: 0;
+      text-align: center;
+      z-index: 10;
+    }
+
+    .slider-dots li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    .slider-dot {
+      display: block;
+      position: relative;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 1px solid $_light-grey;
+      transition: all 0.3s;
+      &:hover {
+        background-color: $_orange;
+        border: none;
+      }
+    }
+
+    #slider-1:checked ~ .control-1 ~ .slider-dots li:nth-child(1) .slider-dot,
+    #slider-2:checked ~ .control-2 ~ .slider-dots li:nth-child(2) .slider-dot,
+    #slider-3:checked ~ .control-3 ~ .slider-dots li:nth-child(3) .slider-dot {
+      background-color: $_orange;
+      border: none;
+    }
+  }
+  .location-web {
+    display: none;
+  }
+}

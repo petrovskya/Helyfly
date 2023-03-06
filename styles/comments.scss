@@ -1,6 +1,8 @@
 .comments {
   padding: 140px 0 85px;
-
+  @media (max-width: 786px) {
+    padding: 40px 0 85px;
+  }
   &__wrapper {
     max-width: 630px;
     @include font-properties(20px, 500);

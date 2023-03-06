@@ -47,6 +47,11 @@
     max-width: 440px;
     padding: 60px 0 50px;
     gap: 5px;
+    @media (max-width: 480px) {
+      font-size: 14px;
+      gap: 20px;
+      padding: 60px 10px 50px;
+    }
   }
 
   &__text {
@@ -68,6 +73,15 @@
     justify-content: flex-start;
     width: 100%;
     gap: 10px;
+
+    @media (max-width: 768px) {
+      padding: 35px 10px 20px 30px;
+      border: 1px solid rgba(167, 167, 167, 0.71);
+      border-top: none;
+      display: grid;
+      grid-template-columns: 67px 75%;
+      align-items: flex-start;
+    }
   }
 
   &_about {
@@ -130,6 +144,9 @@
 
     &_location {
       margin-bottom: 0;
+      @media (max-width: 480px) {
+        font-size: 16px;
+      }
     }
   }
 
