@@ -24,11 +24,12 @@
     padding: 286px 0 260px;
     background: url('../assets/backgrounds/headerBannerBg.png') center/cover
       no-repeat;
+
     &__title {
       max-width: 75%;
       @include h1;
-      line-height: 49px;
       color: $_white;
+      line-height: 49px;
     }
 
     &__button {
@@ -46,9 +47,9 @@
     &__button:hover:before {
       content: ' ';
       position: absolute;
-      display: block;
       top: -110px;
       left: -5px;
+      display: block;
       width: 224px;
       height: 96px;
       border-radius: 5px;
@@ -59,9 +60,9 @@
     &__button:hover::after {
       content: '1500₽';
       position: absolute;
-      display: block;
       top: -76px;
       left: -33px;
+      display: block;
       width: 224px;
       height: 96px;
       @include h2;
@@ -70,8 +71,8 @@
 }
 
 .color-text {
-  color: $_orange;
   background: transparent;
+  color: $_orange;
 }
 
 @media (max-width: 440px) {
@@ -91,25 +92,28 @@
     }
   }
 }
+
 @media (max-width: 320px) {
   .header {
     &__wrapper {
       padding: 23px 0;
+
       &::after {
         content: url('../assets/icons/userIcon.svg');
         position: absolute;
-        display: block;
         top: 23px;
         right: 20px;
+        display: block;
         width: 20px;
         height: 20px;
       }
+
       &::before {
         content: 'Москва';
         position: absolute;
-        display: block;
         top: 23px;
         right: 120px;
+        display: block;
         color: $_blue;
       }
     }
