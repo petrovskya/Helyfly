@@ -23,15 +23,16 @@
 
 .rate {
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: nowrap;
   align-items: center;
   gap: 10px;
   @include h4;
   color: $_dark;
 
   &_features {
+    grid-area: rate;
     max-width: 569px;
-    padding: 20px 110px 25px 0;
+    padding: 20px 0 25px;
     border-bottom: 0.5px solid $_light-grey;
   }
 
@@ -42,7 +43,7 @@
   }
 
   &__text {
-    text-align: center;
+    text-align: left;
   }
 
   &__score {
@@ -56,23 +57,34 @@
   align-items: center;
 
   &_location {
-    width: 100%;
-    justify-content: flex-start;
     flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
     gap: 10px;
   }
 
   &_about {
-    width: 190px;
-    justify-content: center;
+    position: relative;
     flex-direction: column;
+    justify-content: center;
+    width: 190px;
+
+    &::before {
+      content: url('../assets/icons/heartIcon.svg');
+      position: absolute;
+      top: -15px;
+      left: 220px;
+      display: block;
+      width: 31px;
+      height: 27px;
+    }
   }
 
   &-photo {
     position: relative;
     display: block;
-    overflow: hidden;
     border-radius: 50%;
+    overflow: hidden;
 
     &-img {
       position: absolute;
@@ -80,8 +92,8 @@
       left: 50%;
       width: 100%;
       height: 100%;
-      object-fit: cover;
       transform: translate(-50%, -50%);
+      object-fit: cover;
     }
   }
 
@@ -131,5 +143,53 @@
       width: 200px;
       text-align: center;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .logo {
+    height: 15px;
+  }
+
+  .profile {
+    &_location {
+      display: grid;
+      grid-template-columns: 67px 75%;
+      align-items: flex-start;
+      padding: 35px 10px 20px 30px;
+      border: 1px solid rgba(167, 167, 167, 0.71);
+      border-top: none;
+    }
+
+    &_about {
+      &::before {
+        left: 200px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .rate {
+    &_booking {
+      padding: 60px 10px 50px;
+      gap: 20px;
+      font-size: 14px;
+    }
+  }
+
+  .profile {
+    &-name {
+      &_location {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .rate {
+    gap: 20px;
+    font-size: 14px;
   }
 }

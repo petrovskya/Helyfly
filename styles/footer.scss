@@ -32,10 +32,10 @@
   }
 
   &__other {
-    display: flex;
+    display: grid;
+    grid-template-columns: 100px 1fr;
     align-items: center;
     padding: 3px 66px 31px;
-    gap: 326px;
     color: $_grey;
   }
 
@@ -56,5 +56,29 @@
 
   &__contact-support {
     color: $_grey;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    &__info {
+      padding: 27px 0;
+    }
+
+    &_socials {
+      &-links {
+        gap: 15px;
+      }
+    }
+
+    &__wrapper {
+      border-top: 1px solid $_grey;
+    }
+
+    &__other {
+      grid-template-columns: 1fr;
+      gap: 24px;
+      padding: 26px 33px 20px;
+    }
   }
 }

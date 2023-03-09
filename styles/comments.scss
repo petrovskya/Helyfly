@@ -2,8 +2,6 @@
   padding: 140px 0 85px;
 
   &__wrapper {
-    display: grid;
-    place-self: start;
     max-width: 630px;
     @include font-properties(20px, 500);
     color: $_dark;
@@ -19,26 +17,28 @@
   }
 
   &__item {
-    display: flex;
-    gap: 20px;
-    padding: 30px 0 0 0;
-  }
-
-  &__user-content {
     display: grid;
-    margin-top: 5px;
-    max-width: 80%;
-    border-bottom: 0.5px solid $_light-grey;
+    grid-template-columns: 105px 19% 62%;
+    grid-template-areas:
+      'userpic username .'
+      'userpic userposition .'
+      'userpic score status'
+      '. text text'
+      '. date date';
+    gap: 10px;
+    padding-top: 30px;
     @include font-properties(18px, 500);
   }
 
   &__userpic {
     position: relative;
     display: block;
-    overflow: hidden;
+    grid-area: userpic;
     width: 101px;
     height: 101px;
+    margin-right: 10px;
     border-radius: 50%;
+    overflow: hidden;
 
     &_img {
       position: absolute;
@@ -52,56 +52,59 @@
   }
 
   &__username {
-    margin-bottom: 10px;
+    display: grid;
+    grid-area: username;
+    padding-top: 5px;
   }
 
   &__user-position {
-    margin-bottom: 10px;
+    display: grid;
+    grid-area: userposition;
     @include h6;
   }
 
-  &__rate {
-    display: flex;
-    gap: 70px;
-    margin-bottom: 26px;
+  &__rate-score {
+    grid-area: score;
+    width: 118px;
+    height: 17px;
+  }
 
-    &_score {
-      width: 118px;
-      height: 17px;
-    }
+  &__rate-status {
+    position: relative;
+    grid-area: status;
+    margin-left: 70px;
+    @include h6;
+    color: $_grey;
 
-    &_status {
-      position: relative;
-      @include h6;
-      color: $_grey;
-
-      &::before {
-        content: url('../assets/icons/CheckIcon.svg');
-        display: block;
-        position: absolute;
-        top: 2px;
-        left: -20px;
-      }
+    &::before {
+      content: url('../assets/icons/CheckIcon.svg');
+      position: absolute;
+      top: 2px;
+      left: -20px;
+      display: block;
     }
   }
 
   &__text {
-    margin-bottom: 22px;
+    grid-area: text;
+    margin-bottom: 12px;
     @include h5;
     text-align: left;
     line-height: 24px;
   }
 
   &__date {
-    margin-bottom: 35px;
+    grid-area: date;
+    padding-bottom: 35px;
+    border-bottom: 0.5px solid $_light-grey;
     @include h6;
     color: $_grey;
   }
 
-  &__dropdown-button {
+  &__dropdown {
+    position: relative;
     display: block;
     margin: auto;
-    position: relative;
     @include h4;
     color: $_blue;
 
@@ -115,6 +118,45 @@
       @include arrow-icon;
       top: 0;
       left: 175px;
+    }
+
+    &:hover {
+      border-bottom: 1px solid $_light-grey;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .comments {
+    padding: 40px 0 85px;
+
+    &__wrapper {
+      max-width: 100%;
+    }
+
+    &__title {
+      font-size: 28px;
+      text-align: center;
+    }
+
+    &__item {
+      grid-template-columns: 85px 70%;
+      grid-template-areas:
+        'userpic username'
+        'userpic userposition'
+        'userpic score'
+        'status status'
+        'text text'
+        'date date';
+    }
+
+    &__userpic {
+      width: 84px;
+      height: 84px;
+    }
+
+    &__rate-status {
+      margin-left: 20px;
     }
   }
 }
