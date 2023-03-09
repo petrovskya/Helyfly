@@ -19,11 +19,11 @@
     &-item {
       position: relative;
       display: block;
-      overflow: hidden;
       max-width: 286px;
       height: 186px;
       border-radius: 4px;
       transition: 0.3s;
+      overflow: hidden;
 
       &-img {
         position: absolute;
@@ -36,7 +36,7 @@
       }
 
       &:hover {
-        z-index: 2;
+        z-index: 1;
         transform: scale(1.1);
       }
     }
@@ -61,6 +61,7 @@
       top: 0;
       left: 175px;
     }
+
     &:hover {
       border-bottom: 1px solid $_light-grey;
     }
@@ -71,35 +72,42 @@
   .gallery {
     &__slider {
       grid-template-columns: repeat(2, 1fr);
+
       &-item {
         max-width: 100%;
       }
     }
   }
 }
+
 @media (max-width: 480px) {
   .gallery {
     &__slider {
-      position: relative;
-      grid-template-columns: repeat(8, 275px);
-      height: 185px;
-      overflow: clip;
+      display: flex;
+      height: 195px;
       overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+
       &::-webkit-scrollbar {
-        height: 8px;
-        background-color: $_light-grey;
+        height: 7px;
+        background-color: $_white;
       }
+
       &::-webkit-scrollbar-thumb {
-        background-color: transparent;
         border-radius: 5px;
-        box-shadow: inset 1px 1px 10px $_white;
+        background-color: transparent;
+        box-shadow: inset 1px 1px 10px $_light-grey;
       }
+
       &::-webkit-scrollbar-thumb:hover {
         background-color: transparent;
       }
+
       &-item {
-        max-width: 275px;
+        min-width: 92%;
         height: 185px;
+        scroll-snap-align: start;
+
         &:hover {
           transform: none;
         }
