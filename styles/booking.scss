@@ -9,8 +9,8 @@
   }
 
   &__form {
-    padding: 0 30px;
     max-width: 770px;
+    padding: 0 30px;
     border: 1px solid $_light-grey;
     font-size: 18px;
     font-weight: 400;
@@ -50,8 +50,8 @@
       border: 2px solid $_orange;
       border-radius: 3px;
       font-size: 14px;
-      line-height: 17px;
       color: $_orange;
+      line-height: 17px;
       transition: 0.3s;
 
       &:hover {
