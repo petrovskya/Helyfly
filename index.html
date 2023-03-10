@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>HELYFLY</title>
+    <script src="./index.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -221,42 +222,30 @@
         <aside class="location__wrapper">
           <div class="location__slider">
             <div class="slider">
-              <input class="slider-input" type="radio" id="slider-1" name="slider" aria-hidden="true" hidden=""
-              checked="checked">
-              <div class="slider-item">
-                <span class="slider-item_numeration">1</span>
-                <span class="slider-item_title">Где встречаемся?</span>
-                <span class="slider-item_subtitle">Москва</span>
+              <button class="slide-prev">  <img class="slide-prev-img" src="./assets/icons/arrowIcon.svg" alt="arrow-icon"> </button>
+              <div class="slider__inner">
+                <div class="slider__item active ">
+                  <span class="slider__item_numeration">1</span>
+                  <span class="slider__item_title">Где встречаемся?</span>
+                  <span class="slider__item_subtitle">Москва</span>
+                </div>
+                <div class="slider__item ">
+                  <span class="slider__item_numeration">2</span>
+                  <span class="slider__item_title">Время съемки</span>
+                  <span class="slider__item_subtitle">Москва</span>
+                </div>
+                <div class="slider__item">
+                  <span class="slider__item_numeration">3</span>
+                  <span class="slider__item_title">Мест осталось:</span>
+                  <span class="slider__item_subtitle">2 места</span>
+                </div>
               </div>
-              <input class="slider-input" type="radio" id="slider-2" name="slider" aria-hidden="true" hidden="">
-              <div class="slider-item">
-                <span class="slider-item_numeration">2</span>
-                <span class="slider-item_title">Время съемки</span>
-                <span class="slider-item_subtitle">Москва</span>
-              </div>
-              <input class="slider-input" type="radio" id="slider-3" name="slider" aria-hidden="true" hidden="">
-              <div class="slider-item">
-                <span class="slider-item_numeration">3</span>
-                <span class="slider-item_title">Мест осталось:</span>
-                <span class="slider-item_subtitle">2 места</span>
-              </div>
-              <label for="slider-3" class="slider-control prev control-1">‹</label>
-              <label for="slider-2" class="slider-control next control-1">›</label>
-              <label for="slider-1" class="slider-control prev control-2">‹</label>
-              <label for="slider-3" class="slider-control next control-2">›</label>
-              <label for="slider-2" class="slider-control prev control-3">‹</label>
-              <label for="slider-1" class="slider-control next control-3">›</label>
-              <ol class="slider-dots">
-                <li>
-                  <label for="slider-1" class="slider-dot"></label>
-                </li>
-                <li>
-                  <label for="slider-2" class="slider-dot"></label>
-                </li>
-                <li>
-                  <label for="slider-3" class="slider-dot"></label>
-                </li>
-              </ol>
+              <button class="slide-next">  <img class="slide-next-img" src="./assets/icons/arrowIcon.svg" alt="arrow-icon">  </button>
+            </div>
+            <div class="slider__dots">
+              <span class="slider__dot checked"> </span>
+              <span class="slider__dot"> </span>
+              <span class="slider__dot"> </span>
             </div>
           </div>
           <div class="profile profile_location">
