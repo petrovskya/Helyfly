@@ -38,7 +38,7 @@
 
   &_booking {
     max-width: 440px;
-    padding: 60px 0 50px;
+    padding: 60px 30px 50px;
     gap: 5px;
   }
 
@@ -157,8 +157,6 @@
       grid-template-columns: 67px 75%;
       align-items: flex-start;
       padding: 35px 10px 20px 30px;
-      border: 1px solid rgba(167, 167, 167, 0.71);
-      border-top: none;
     }
 
     &_about {
@@ -172,7 +170,7 @@
 @media (max-width: 480px) {
   .rate {
     &_booking {
-      padding: 60px 10px 50px;
+      padding: 30px 10px;
       gap: 20px;
       font-size: 14px;
     }

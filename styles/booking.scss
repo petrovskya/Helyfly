@@ -10,7 +10,7 @@
 
   &__form {
     max-width: 770px;
-    padding: 0 30px;
+
     border: 1px solid $_light-grey;
     font-size: 18px;
     font-weight: 400;
@@ -22,7 +22,7 @@
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
-    padding: 20px 0;
+    padding: 20px 30px;
   }
 
   &__option {
@@ -32,7 +32,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px 0;
+      padding: 10px 30px;
       border-top: 0.5px solid $_light-grey;
     }
 
@@ -75,7 +75,6 @@
 
     &__date {
       justify-content: center;
-      border-bottom: 0.5px solid $_light-grey;
 
       .calendar-icon {
         display: none;
@@ -84,10 +83,15 @@
 
     &__option {
       display: grid;
-      gap: 20px;
-      padding: 30px 20px;
       border-top: none;
       border-bottom: 0.5px solid $_light-grey;
+      &-item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding-bottom: 20px;
+      }
     }
   }
 }
