@@ -436,7 +436,6 @@ ul {
 
 .booking__form {
   max-width: 770px;
-  padding: 0 30px;
   border: 1px solid #c7c7c7;
   font-size: 18px;
   font-weight: 400;
@@ -448,7 +447,7 @@ ul {
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
-  padding: 20px 0;
+  padding: 20px 30px;
 }
 
 .booking__option {
@@ -459,7 +458,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  padding: 10px 30px;
   border-top: 0.5px solid #c7c7c7;
 }
 
@@ -499,7 +498,6 @@ ul {
 
   .booking__date {
     justify-content: center;
-    border-bottom: 0.5px solid #c7c7c7;
   }
 
   .booking__date .calendar-icon {
@@ -508,10 +506,16 @@ ul {
 
   .booking__option {
     display: grid;
-    gap: 20px;
-    padding: 30px 20px;
     border-top: none;
     border-bottom: 0.5px solid #c7c7c7;
+  }
+
+  .booking__option-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding-bottom: 20px;
   }
 }
 
@@ -579,7 +583,9 @@ ul {
   }
 
   .location__wrapper {
-    padding: 52px 0;
+    position: relative;
+    padding: 52px 0 20px;
+    border: 1px solid #c7c7c7;
   }
 
   .location-mob {
@@ -587,35 +593,31 @@ ul {
     padding: 52px 5px 0;
   }
 
+  .location-mob .active {
+    display: grid;
+  }
+
   .location-web {
     display: none;
   }
 
-  .location__slider {
-    position: relative;
-  }
-
   .slider {
     position: relative;
-    height: 220px;
     width: 100%;
-    padding: 20px 26px 0;
-    border: 1px solid rgba(167, 167, 167, 0.71);
-    border-bottom: none;
-    overflow: hidden;
+    padding: 0 26px;
   }
 
-  .slider-item {
-    position: absolute;
-    display: grid;
+  .slider__item {
+    position: relative;
+    display: none;
     place-items: center;
-    padding: 20px 0;
     gap: 10px;
+    padding-bottom: 20px;
     font-size: 18px;
-    opacity: 0;
+    opacity: 1;
   }
 
-  .slider-item_numeration {
+  .slider__item_numeration {
     width: 61px;
     height: 61px;
     margin-bottom: 10px;
@@ -628,29 +630,59 @@ ul {
     line-height: 61px;
   }
 
-  .slider-item_title {
+  .slider__item_title {
     font-weight: 500;
   }
 
-  .slider-dots {
+  .slide-previous,
+  .slide-next {
     position: absolute;
-    bottom: 5%;
-    left: 50%;
+    top: 10%;
+    z-index: 2;
+    display: block;
+    padding: 10px;
+    color: #c7c7c7;
+    transform: translate(0, -10%);
+    transition-duration: 0.3s;
+  }
+
+  .slide-previous:active,
+  .slide-next:active {
+    border-radius: 50%;
+    background-color: rgba(252, 155, 9, 0.8);
+  }
+
+  .slide-previous {
+    left: 15%;
+    transform: rotate(90deg);
+  }
+
+  .slide-previous-img {
+    width: 19px;
+    height: 10px;
+  }
+
+  .slide-next {
+    right: 15%;
+    transform: rotate(270deg);
+  }
+
+  .slide-next-img {
+    width: 19px;
+    height: 10px;
+  }
+
+  .slider__dots {
     z-index: 1;
-    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 11px;
+    margin: 0 auto;
     padding: 0;
     text-align: center;
-    transform: translate(-50%, 0%);
-    list-style: none;
   }
 
-  .slider-dots li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-
-  .slider-dot {
-    position: relative;
+  .slider__dot {
     display: block;
     width: 10px;
     height: 10px;
@@ -659,47 +691,12 @@ ul {
     transition: all 0.3s;
   }
 
-  .slider-dot:hover {
+  .slider__dot:hover {
     border: none;
     background-color: #fc9b09;
   }
 
-  .slider-control {
-    position: absolute;
-    top: 25%;
-    z-index: 1;
-    display: none;
-    font-size: 40px;
-    color: #c7c7c7;
-    transform: translate(0, -25%);
-  }
-
-  .slider-control:hover {
-    color: #fc9b09;
-  }
-
-  .slider-control.prev {
-    left: 5%;
-  }
-
-  .slider-control.next {
-    right: 5%;
-  }
-
-  .slider-input:checked+.slider-item {
-    position: static;
-    opacity: 1;
-  }
-
-  #slider-1:checked~.control-1,
-  #slider-2:checked~.control-2,
-  #slider-3:checked~.control-3 {
-    display: block;
-  }
-
-  #slider-1:checked~.control-1~.slider-dots li:nth-child(1) .slider-dot,
-  #slider-2:checked~.control-2~.slider-dots li:nth-child(2) .slider-dot,
-  #slider-3:checked~.control-3~.slider-dots li:nth-child(3) .slider-dot {
+  .checked {
     border: none;
     background-color: #fc9b09;
   }
@@ -979,7 +976,7 @@ ul {
 
 .rate_booking {
   max-width: 440px;
-  padding: 60px 0 50px;
+  padding: 60px 30px 50px;
   gap: 5px;
 }
 
@@ -1098,8 +1095,6 @@ ul {
     grid-template-columns: 67px 75%;
     align-items: flex-start;
     padding: 35px 10px 20px 30px;
-    border: 1px solid rgba(167, 167, 167, 0.71);
-    border-top: none;
   }
 
   .profile_about::before {
@@ -1109,7 +1104,7 @@ ul {
 
 @media (max-width: 480px) {
   .rate_booking {
-    padding: 60px 10px 50px;
+    padding: 30px 10px;
     gap: 20px;
     font-size: 14px;
   }
